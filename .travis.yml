@@ -2,7 +2,7 @@ language: sh
 
 before_deploy:
   - echo 'let projects = [' > projects.js
-  - find . -not -name '.*' -maxdepth 1 -type d | sort | xargs printf '"%s",' >> projects.js
+  - find . -maxdepth 1 -type d -not -name '.*' | sort | xargs printf '"%s",' >> projects.js
   - echo '];' >> projects.js
 
 deploy:
