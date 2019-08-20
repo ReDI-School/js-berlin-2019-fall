@@ -261,3 +261,35 @@ let s7_correct = 'This is a backslash: \\';
 | Comparison Operators | `=== !== < > <= >=` | `temperature !== 25`<br/>`age >= 18` |
 | Logical Operators | &#124;&#124; `&& !` | `a && !b`<br />`x >= 5 && x < 15` |
 | Combined Operators | `+= -= *= /= ++` | `a *= 2`<br />`count++` |
+
+---
+
+### Outputting values
+
+* You can use `console.log` to print values to the JavaScript console.
+* The console will only be visible to developers, _not_ to your users
+
+Example:
+
+```js
+console.log("Hello");
+```
+
+---
+
+### Try it out
+
+* In [jsbin.com](https://jsbin.com), declare some variables
+* Open the `console` tab in jsbin.com
+* Use `console.log()` to print your variables
+* Declare two variables `firstName` and `lastName`
+* Use an operator to output your full name (first name followed by last name)
+
+---
+
+### Variable names
+
+* In JavaScript, "CamelCase" is very common: `isStudent`, `favoriteFood`, `likesGermanFood`
+* Some people also prefer "snake_case": `is_student`, `favorite_food`, `likes_german_food`
+* In this course, we prefer "CamelCase"
+
