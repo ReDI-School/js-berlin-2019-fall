@@ -103,7 +103,7 @@ We'll be using these tools during our course:
 * [freecodecamp.org](https://www.freecodecamp.org/)
 * [udemy.com](https://www.udemy.com): Introduction to JavaScript Development
 * [codeacademy.com](https://www.codecademy.com): Introduction to JavaScript
-* [edabit.com](https://edabit.com): Learn JavaScript with resources
+* [edabit.com](https://edabit.com): Learn JavaScript with interactive challenges and external resources
 
 ---
 
