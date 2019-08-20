@@ -176,6 +176,24 @@ let deliveryDate = undefined;   // undefined
 
 ---
 
+### Try it out!
+
+* Open [jsbin.com](https://jsbin.com)
+* In the `JavaScript` tab, create a few variables describing you, e.g. name, age, ...
+* Think of the variable type
+
+---
+
+### Try it out - Solution
+
+```js
+let name = "Harald";
+let age = 41;
+let isTeacher = true;
+```
+
+---
+
 ### Let, const and var
 
 * In this course, we use the `let` keyword to declare new variables
@@ -183,7 +201,7 @@ let deliveryDate = undefined;   // undefined
 * If you're sure that the value will never change, you can also declare a variable as "constant" with `const`:
 
 ```js
-const PI = 3.1415;
+const PI = 3.141592653589793;
 ```
 
 ---
