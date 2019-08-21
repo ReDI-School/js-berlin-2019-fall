@@ -1,3 +1,13 @@
+# Table Of Contents
+
+Quick links to lessons:
+
+[1](#lesson1), [2](#lesson2), [3](#lesson3)
+
+---
+
+<!-- .slide: id="lesson1" -->
+
 # Basic Frontend - Fall 2019
 
 ## Lesson 1, Tuesday, 2019-08-20
@@ -297,15 +307,77 @@ console.log(firstName + " " + lastName);
 
 ---
 
+<!-- .slide: id="lesson2" -->
+
 # Basic Frontend - Fall 2019
 
-## Lesson 2, Tuesday, 2019-08-22
+## Lesson 2, Thursday, 2019-08-22
 
 ---
 
 ### Variable names
 
 * In JavaScript, "CamelCase" is very common: `isStudent`, `favoriteFood`, `likesGermanFood`
-* Some people also prefer "snake_case": `is_student`, `favorite_food`, `likes_german_food`
+* Some people also prefer "snake\_case": `is_student`, `favorite_food`, `likes_german_food`
 * In this course, we prefer "CamelCase"
 
+---
+
+<!-- .slide: id="lesson3" -->
+
+# Basic Frontend - Fall 2019
+
+## Lesson 3, Tuesday, 2019-08-27
+
+---
+
+### Pass-by-value
+
+* Primitive types in JavaScript (number, boolean, string, undefined) are always passed by value:
+
+```js
+let age = 42;
+let otherAge = age;
+
+age++;   // only increases "age", not "otherAge"
+
+console.log(age);       // 43
+console.log(otherAge);  // 42
+```
+
+---
+
+### Conditional Statements - If
+
+```js
+if (condition) {
+  // block of code that
+  // will run ONLY if
+  // condition is true
+}
+```
+
+---
+
+### Conditional Statements - Examples
+
+```js
+if (food === 'pizza') {
+  console.log('My favorite!');
+}
+```
+
+```js
+if (canEnterKindergarten) {
+  console.log('Child is allowed.');
+  countChildren++;
+}
+```
+
+```js
+if (money < 1000000) {
+  console.log('You are not rich :p');
+}
+```
+
+---
