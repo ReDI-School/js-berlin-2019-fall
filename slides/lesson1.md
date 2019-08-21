@@ -287,6 +287,22 @@ console.log("Hello");
 
 ---
 
+### Solution
+
+```js
+let firstName = "Harald";
+let lastName = "Fernengel";
+console.log(firstName + " " + lastName);
+```
+
+---
+
+# Basic Frontend - Fall 2019
+
+## Lesson 2, Tuesday, 2019-08-22
+
+---
+
 ### Variable names
 
 * In JavaScript, "CamelCase" is very common: `isStudent`, `favoriteFood`, `likesGermanFood`
