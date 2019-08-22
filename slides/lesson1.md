@@ -689,7 +689,9 @@ console.log(age > 18);    // false
 console.log(age <= 15)    // false
 
 ```
+
 ---
+
 
 ### Task
 
@@ -728,6 +730,8 @@ let canEnter = totalCost <= money;
 
 console.log(canEnter); // false
 ```
+
+
 ---
 
 ### Homework, Task part 2
@@ -756,12 +760,15 @@ console.log(canEnter); // true
 ```
 ---
 --->
+
 ### homework
 We are implementing a simple program that tests if a child is allowed to enter a Kindergarten.
 
 Children are allowed to enter the Kindergarten only if they are older than 2 years old and younger than or exactly 6 years old.
 - Can a child with the age of 3 enter?
 - Can a child with the age of 7 enter?
+
+
 ---
 
 <!-- .slide: id="lesson3" -->
