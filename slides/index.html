@@ -17,6 +17,15 @@
     }
     /* remove the ugly black border around images */
     .reveal section img { background:none; border:none; box-shadow:none; }
+
+    /* more horizontal padding on code snippets */
+    code.language-js.hljs.javascript, code.language-JavaScript.hljs {
+      padding: 5px 10px;
+    }
+
+    .reveal table {
+      font-size: xx-large;
+    }
   </style>
     <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/vs2015.css"/>
   </head>
@@ -56,6 +65,28 @@
         hash: true,
         controlsTutorial: false
       });
+
+      // change slides on mouse wheel events:
+      const SCROLL_THRESHOLD = 40; // this variable prevents too many scroll events
+      let sumDeltaX = 0;
+      let sumDeltaY = 0;
+      document.addEventListener("wheel", e => {
+        const left = document.querySelector("body > div > aside > button.navigate-left");
+        const right = document.querySelector("body > div > aside > button.navigate-right");
+        sumDeltaX += e.deltaX;
+        sumDeltaY += e.deltaY;
+        //scroll up or down
+        if (Math.abs(sumDeltaY) > SCROLL_THRESHOLD) {
+          sumDeltaY > 0 ? right.click() : left.click();
+          sumDeltaY = 0
+        }
+        //scroll left or right
+        if (Math.abs(sumDeltaX) > SCROLL_THRESHOLD) {
+          sumDeltaX > 0 ? right.click(): left.click();
+          sumDeltaX = 0;
+        }
+      });
+
     </script>
   </body>
 </html>
