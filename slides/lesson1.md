@@ -499,6 +499,7 @@ let name = "Anakin Skywalker";
 
 console.log(name); // correct!
 ```
+
 ---
 
 ### Exercise
@@ -515,6 +516,7 @@ let degreesInFahrenheit = ???;
 console.log(degreesInFahrenheit);
 
 ```
+
 ---
 
 
@@ -532,6 +534,7 @@ let degreesInFahrenheit = degreesInCelsius * 1.8 + 32;
 console.log(degreesInFahrenheit); // 82.4‬
 
 ```
+
 ---
 
 ### Recap: Booleans
