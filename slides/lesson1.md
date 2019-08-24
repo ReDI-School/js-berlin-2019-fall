@@ -782,7 +782,6 @@ Children are allowed to enter the Kindergarten only if they are older than 2 yea
 
 ---
 
-
 ### Execution
 
 
@@ -797,6 +796,55 @@ x = x + 15;
 console.log(x); // what is the output here ?
 
 ```
+
+---
+
+### Warm-up
+
+A theater only lets people in that have a ticket or are on the guest list.
+
+What operator do we need to put instead of the `???`?
+
+```js
+let canEnterTheater = hasTicket ??? isOnGuestList;
+console.log("Person can enter theater: " + canEnterTheater);
+```
+
+---
+
+### Warm-up - Solution
+
+A theater only lets people in that have a ticket or are on the guest list.
+
+What operator do we need to put instead of the `???`?
+
+```js
+let canEnterTheater = hasTicket || isOnGuestList;
+console.log("Person can enter theater: " + canEnterTheater);
+```
+
+---
+
+### Warm-up 2
+
+A course only accepts people that paid the fee and passed the test
+
+```js
+let canJoinCourse = didPayFee ??? didPassTest;
+console.log("Person can join course: " + canJoinCourse);
+```
+
+---
+
+### Warm-up 2 - Solution
+
+A course only accepts people that paid the fee and passed the test
+
+```js
+let canJoinCourse = didPayFee && didPassTest;
+console.log("Person can join course: " + canJoinCourse);
+```
+
 ---
 
 ### Pass-by-value
@@ -849,3 +897,169 @@ if (money < 1000000) {
 ```
 
 ---
+
+### Code Blocks: {}
+
+* Should be indented for better readability:
+
+```js
+if (language === "German") {
+  // In VSCode, you can indent code by pressing the "Tab" key,
+  // or right-click and choose "Format Document"
+  console.log("Guten Tag!");
+}
+```
+
+---
+
+### Code Blocks: {}
+
+* All variables created in code blocks will disappear after closing the block (technical term: “block scope”)
+
+```js
+let name = "John";
+
+if (name === "John") {
+  let greeting = "Hello John";
+}
+if (name === "Mary") {
+  let greeting = "Hello Mary";
+}
+
+console.log(greeting); // ERROR!!!!
+```
+
+---
+
+### Code Blocks: {}
+
+* Correct solution:
+
+```js
+let name = "John";
+
+let greeting;
+if (name === "John") {
+  greeting = "Hello John";
+}
+if (name === "Mary") {
+  greeting = "Hello Mary";
+}
+
+console.log(greeting); // "Hello John"
+```
+
+---
+
+### Code Blocks: Quiz
+
+```js
+let name = "John";
+
+if (name === "John") {
+  name = "Jonathan";
+  let greeting = "Hello";
+  console.log(greeting + " " + name);
+}
+
+console.log("We greeted " + name +
+            " with the greeting " + greeting);
+```
+
+---
+
+### Let's code!
+
+Alice and Bob invented a game where the player with the highest value of his height (in cm) plus five times his age wins
+
+1. Create variables for the heights and ages of the two friends and assign them some values
+1. Calculate their scores
+1. Decide who wins, print the winner and their score to the console. Remember: there can be a draw (both players with the same score).
+1. EXTRA: Add a third player and decide who wins.
+
+---
+
+### If...Else
+
+![IfElse](images/If-Then-Else-diagram.svg)
+
+```js
+if (A) {
+  B
+} else {
+  C
+}
+```
+
+---
+
+### If...Else example
+
+```js
+if (temperature > 25) {
+  console.log("Go swimming");
+} else {
+  console.log("Go biking");
+}
+```
+
+---
+
+### If...Else-If...Else example
+
+```js
+if (day === 'Saturday') {
+  console.log('Do all the shopping.');
+} else if (day === 'Sunday') {
+  console.log('Relax!');
+} else {
+  console.log('Wake up and go to work!');
+}
+```
+
+---
+
+### Nesting If Statements
+
+We can "nest" any statement in a block:
+
+```js
+if (temperature > 25) {
+  console.log("yay, it's warm!");
+  if (weather === "Sunny") {
+    console.log("Yay, sun is shining!");
+  }
+}
+```
+
+---
+
+### Exercise
+
+* Make some if statements
+  * Make a "Good day" greeting if the hour is less than 18 <!-- .element: style="font-size:60%;" -->
+  * Make an if statement that always logs “always” <!-- .element: style="font-size:60%;" -->
+  * Make a statement that only says “Hello” to someone with your name. <!-- .element: style="font-size:60%;" -->
+* “nest” an if statement inside another if statement
+  * Check if a child is allowed into the kindergarten (isAllowed) <!-- .element: style="font-size:60%;" -->
+  * If the child does not speak German, add 1 to a variable for non-German speakers <!-- .element: style="font-size:60%;" -->
+* Describe the weather based on the temperature:
+  * Above 30 <!-- .element: style="font-size:60%;" -->
+  * Above 20 <!-- .element: style="font-size:60%;" -->
+  * Above 5 <!-- .element: style="font-size:60%;" -->
+  * Everything else <!-- .element: style="font-size:60%;" -->
+
+---
+
+### Exercise
+
+We’re going shopping, and our budget is 5 &euro;
+
+* If there’s enough money left, we buy milk (2 &euro;)
+* If there’s enough money left, we buy cheese (4 &euro;)
+* If there’s enough money left, we buy bread (2 &euro;)
+* If there’s enough money left and we bought bread, we also buy butter (1 &euro;)
+
+Create a JavaScript program that outputs what we bought
+
+BONUS: Try setting the budget to 7 &euro;, what did we buy?
