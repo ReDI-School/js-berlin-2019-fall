@@ -34,19 +34,16 @@ let courseStarting = true;
 | *Content* |  *Presentation* | *Dynamic Effects* |
 | Nouns | Adjectives | Verbs |
 
-HTML:
 ```html
-<p></p>  <!-- Adds a paragraph -->
+<p></p>  <!-- HTML: Adds a paragraph -->
 ```
 
-CSS:
 ```css
-P {color: red;}  /* Makes the paragraph red */
+P {color: red;}  /* CSS: Makes the paragraph red */
 ```
 
-JavaScript:
 ```js
-p.remove(); // removes the paragraph
+p.remove(); // JavaScript: removes the paragraph
 ```
 
 ---
