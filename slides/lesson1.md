@@ -740,7 +740,6 @@ Can they enter now ?
 
 ---
 
-<!---
 ### solution part 2
 ```js
 let discount = 2;
@@ -758,8 +757,8 @@ let canEnter = totalCost <= money;
 
 console.log(canEnter); // true
 ```
+
 ---
---->
 
 ### homework
 We are implementing a simple program that tests if a child is allowed to enter a Kindergarten.
@@ -1057,18 +1056,24 @@ if (temperature > 25) {
 
 ### Exercise
 
-* Make some if statements
+* Make three if statements
   * Make a "Good day" greeting if the hour is less than 18 <!-- .element: style="font-size:60%;" -->
   * Make an if statement that always logs “always” <!-- .element: style="font-size:60%;" -->
   * Make a statement that only says “Hello” to someone with your name. <!-- .element: style="font-size:60%;" -->
-* “nest” an if statement inside another if statement
-  * Check if a child is allowed into the kindergarten (isAllowed) <!-- .element: style="font-size:60%;" -->
-  * If the child does not speak German, add 1 to a variable for non-German speakers <!-- .element: style="font-size:60%;" -->
 * Describe the weather based on the temperature:
   * Above 30 <!-- .element: style="font-size:60%;" -->
   * Above 20 <!-- .element: style="font-size:60%;" -->
   * Above 5 <!-- .element: style="font-size:60%;" -->
   * Everything else <!-- .element: style="font-size:60%;" -->
+
+---
+
+### Exercise - nested if statement
+
+* “nest” an if statement inside another if statement
+  * These variables are given: `let isAllowed = true; let language = "Arabic"; let nonGermanSpeakers = 0;`.
+  * Check if a child is allowed into the kindergarten.
+  * If the child does not speak German, add 1 to a variable for non-German speakers
 
 ---
 
