@@ -796,6 +796,30 @@ console.log(x); // what is the output here ?
 
 ---
 
+### Compound operators
+
+* `+=`, `-=`, `\=` and `*=` can be used to add and assign a value:
+
+```js
+let x = 42;
+x += 4;   // same as x = x + 4
+x -= 4;   // same as x = x - 4
+```
+
+---
+
+### Increment / Decrement operators
+
+* `++` and `--` can be used to add/subtract `1` from a variable:
+
+```js
+let x = 42;
+x++;  // x is now 43, same as x = x + 1
+x--;  // x is now 42 again, same as x = x - 1
+```
+
+---
+
 ### Warm-up
 
 A theater only lets people in that have a ticket or are on the guest list.
@@ -844,9 +868,9 @@ console.log("Person can join course: " + canJoinCourse);
 
 ---
 
-### Pass-by-value
+### Assigning variables
 
-* Primitive types in JavaScript (number, boolean, string, undefined) are always passed by value:
+* Primitive types in JavaScript (`number`, `boolean`, `string`, `undefined`) are copied when assigning:
 
 ```js
 let age = 42;
