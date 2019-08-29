@@ -2,7 +2,7 @@
 
 Quick links to lessons:
 
-[1](#lesson1), [2](#lesson2), [3](#lesson3)
+[1](#lesson1), [2](#lesson2), [3](#lesson3), [4](#lesson4)
 
 ---
 
@@ -1089,3 +1089,364 @@ We’re going shopping, and our budget is 5 &euro;
 Create a JavaScript program that outputs what we bought
 
 BONUS: Try setting the budget to 7 &euro;, what did we buy?
+
+---
+
+
+<!-- .slide: id="lesson4" -->
+
+# Basic Frontend - Fall 2019
+
+Lesson 4, Thursday, 2019-08-29
+
+---
+
+### Recap: IF
+
+```js
+if (condition) {
+  // block of code that will run
+  // ONLY if condition is true
+}
+```
+<!-- .element: style="font-size:100%" -->
+---
+
+### Task - 1
+
+Implement a simple program that would inform a student if he/she has passed the test.
+
+A student will pass a test only if his/her grade is smaller than or equal to 4.0 (according to the german grading system).
+
+If the student has passed the test, log to the console: “Congrats, you passed the test”.
+
+If not, log to the console: “HAHA loser”.
+
+Try your code with a grade of 3.7 and again with 4.3
+
+---
+
+### recap: if else
+
+```js
+if (condition) {
+  // will run ONLY if
+  // condition is TRUE
+} else {
+  // will run ONLY if
+  // condition is FALSE
+}
+```
+<!-- .element: style="font-size:100%" -->
+
+---
+
+### task - 2
+
+Make sure you use “else” statements in your program instead of two different if statements
+
+If you already did that, good for you !
+
+---
+
+### task - 3
+
+We want to display some additional information to the students who passed the test.
+
+If the student got a grade of smaller than 2.0 , we want to log to the console: “HAHA, NERD”.
+
+NOTE : we still want to log the old statement which is “Congrats, you passed the test”.
+
+---
+
+### Nesting
+
+```js
+if (condition) {
+  // this is a block of code
+  // you can write here any code you want!
+
+  // you can even write other if statements!
+  if (anotherCondition) {
+    console.log("I am in a nested if !");
+  }
+}
+```
+
+---
+
+### Nesting - 2
+
+```js
+if (condition) {
+  // if we are here in this block
+  // we already know that “condition” is true
+
+  // we don’t have to do this:
+  if (condition && anotherCondition) {
+    console.log("I am in a nested if !");
+  }
+}
+
+```
+
+---
+
+### Why nesting?
+
+- Simple nesting generally makes the code more understandable and easier to follow
+- Do not nest too much if statements (or anything for that matter), it will get too confusing.
+- About 2 to 3 nested if statements max.
+
+---
+
+### task - 4
+
+If the student got a grade smaller than 3.3, we want to log to the console: “You are a typical student”.
+
+Note : we still want to log the old statement which is “Congrats, you passed the test”.
+
+---
+
+### recap: if else if else
+```js
+if (day === 'Saturday') {
+  console.log('Do all the shopping.');
+} else if (day === 'Sunday') {
+  console.log('Relax!');
+} else {
+  console.log('Wake up and go to work!');
+}
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+### rules of if else if else
+```js
+if (condition1) {
+  // some code ...
+} else if (condition2) {
+  // some other code ...
+} else if (condition3) {
+  // code, code, code ...
+} else {
+  // even more code ...
+}
+// JavaScript will continue from here.
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+### rules of if else if else
+
+- JavaScript will go through the if/else-if/else statements from top to bottom.
+- In our example, it will check condition1, then condition2, then condition3…
+- If one of the conditions evaluates to true, JavaScript will execute it’s code block AND IGNORE EVERYTHING ELSE
+
+---
+
+### task - 5
+
+On any other passing grade, we want to log: "You passed, but I am sure it was totally luck".
+
+Note : We still want to log the old statement which is "Congrats, you passed the test".
+
+---
+
+### questions?
+
+---
+
+### functions
+
+A function is a reusable block of code.
+
+A very simple function would be:
+
+```js
+function myFunction() {
+  console.log("I am in a function!");
+}
+//you can call the function like this:
+myFunction();
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+you can write any code you want in the function
+```js
+function sayHello() {
+  console.log("Hello There!");
+
+  console.log("...");
+
+  console.log("General Kenobi!");
+}
+sayHello();
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+functions can also return some value, we can save that value in a variable to use it later!
+```js
+function giveMe5() {
+  return 5;
+}
+
+let number = giveMe5();
+console.log(number); // 5
+```
+<!-- .element: style="font-size:100%" -->
+
+---
+
+functions can also take values, we call them parameters:
+
+```js
+function multiplyBy4(x) {
+  return x * 4;
+}
+
+let number = multiplyBy4(7);
+console.log(number); // 28
+
+number = multiplyBy4(number);
+console.log(number);
+// what is the output here?
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+multiple parameters is also possible:
+```js
+function multiply(x, y) {
+  return x * y;
+}
+
+let number = multiply(2, 3);
+console.log(number); // 6
+
+number = multiply(10, number);
+console.log(number);
+// what is the output here?
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+### function definition
+
+
+the general structure of a function would be:
+```js
+function nameOfFunction(param1, param2, ...) {
+  // statements...
+
+  return value;
+}
+```
+<!-- .element: style="font-size:78%" -->
+
+---
+
+- `function` is a keyword for creating functions, just like `let`
+- after that we write the name of the function, just like variable names!
+- after that we have `()` for the parameters.
+- finally, we have the function block `{}` where we put our code.
+
+```js
+function nameOfFunction (param1, param2, ...) {
+  // any code you want! even if-else statements! anything!
+
+  return value;  // return is optional, depends on what you need
+  // what happens if we don't have a return?
+}
+```
+
+---
+
+### calling a function
+
+to execute a function, we write the function name, and then `()`, we pass any parameters we want into the `()`
+
+```js
+function sayHello(){
+  console.log("Hello!");
+}
+
+// the function sayHello
+// does not require any parameters
+// that is why the parenthesis () are empty.
+sayHello();
+```
+<!-- .element: style="font-size:80%" -->
+
+---
+
+### calling a function
+
+```js
+function greet(name){
+  console.log("Hello " + name + " !");
+}
+
+// the function greet takes one parameter: name
+// that is why we write "Bob" in the parenthesis.
+// we are giving the value "Bob" to the function.
+greet("Bob");
+// "Hello Bob !"
+```
+<!-- .element: style="font-size:70%" -->
+
+---
+
+### calling a function
+
+```js
+function square(x) {
+  return x * x;
+}
+
+// the function 'square' takes one parameter: x
+// we have to give it a value in the parenthesis ()
+// in this example, the value is 5
+// however, the function 'square' also returns a value
+// we save the returned value in a variable to use it later
+let numberSquared = square(5);
+
+console.log(numberSquared); // 25
+```
+<!-- .element: style="font-size:60%" -->
+
+---
+
+### exercise
+
+write a function that takes the degrees in Celsius, and returns degrees in Fahrenheit.
+
+test your function with the values 28 and 31.
+
+Remember:
+```js
+// Fahrenheit = Celsius multiplied by 1.8 plus 32
+```
+<!-- .element: style="font-size:74%" -->
+
+---
+
+### Homework
+
+We’re going shopping, and our budget is 5€
+- If there's enough money left, we buy milk 2€
+- If there's enough money left, we buy cheese 4€
+- If there's enough money left, we buy bread 2€
+- If there's enough money left and we bought bread, we should also buy butter 1€
+
+Create a JavaScript program that outputs what we bought. Try setting the budget to 7 EUR, what did we buy?
+
+BONUS: use functions
