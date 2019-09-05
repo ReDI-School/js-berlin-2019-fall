@@ -2,7 +2,7 @@
 
 Quick links to lessons:
 
-[1](#lesson1), [2](#lesson2), [3](#lesson3), [4](#lesson4)
+[1](#lesson1), [2](#lesson2), [3](#lesson3), [4](#lesson4), [5](#lesson5)
 
 ---
 
@@ -1426,17 +1426,57 @@ console.log(numberSquared); // 25
 
 ---
 
-### exercise
+### Exercise
 
-write a function that takes the degrees in Celsius, and returns degrees in Fahrenheit.
+Write a function that takes the degrees in Celsius, and returns degrees in Fahrenheit.
 
 test your function with the values 28 and 31.
 
 Remember:
 ```js
-// Fahrenheit = Celsius multiplied by 1.8 plus 32
+// Fahrenheit = Celsius multiplied
+// by 1.8 plus 32
 ```
-<!-- .element: style="font-size:74%" -->
+
+---
+
+### Solution
+
+```js
+function celsiusToFahrenheit(degreesCelsius) {
+  let degreesFahrenheit = degreesCelsius * 1.8 + 32;
+  return degreesFahrenheit;
+}
+
+console.log("28 degrees: " + fahrenheitToCelsius(28));
+console.log("32 degrees: " + fahrenheitToCelsius(32));
+```
+
+---
+
+### Exercise
+
+Write a `min` function that returns the smaller of the two arguments passed to it:
+
+```js
+min(1, 2);    // should return 1
+min(100, 99); // should return 99
+min(-10, 0);  // should return -10
+```
+
+---
+
+### Solution
+
+```js
+function min(number1, number2) {
+  if (number1 < number2) {
+    return number1;
+  } else {
+    return number2;
+  }
+}
+```
 
 ---
 
