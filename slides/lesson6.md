@@ -6,6 +6,110 @@ Lesson 6, Thursday, 2019-09-10
 
 ---
 
+### VSCode
+
+To setup a simple front-end project with VSCode, we need at least 2 files:
+* an HTML file
+* a JavaScript file
+
+To make our setup easier, we put both files in the same folder.
+
+Do it yourself! create a new folder and open that folder with VSCode.
+
+Add two files: `index.html` and `main.js`.
+
+---
+
+And now we have to connect our HTML file with our JavaScript file.
+
+We do that using the `<script>` tag!
+```html
+<script src="main.js"></script>
+```
+We put the name of our JavaScript file in the `src` attribute of our `<script>` tag.
+
+---
+
+**Where do we put the script tag?**
+
+You should always put it as the final element of your `body` tag.
+
+```html
+<html>
+  <head>
+    <!-- Stuff here ... -->
+  </head>
+  <body>
+    <!-- More stuff here ... -->
+
+    <!-- your script tag should be just before </body> -->
+    <script src="main.js"></script>
+  </body>
+</html>
+```
+
+---
+
+Let's make our HTML file very simple, just to see if it works.
+
+`index.html`:
+
+```html
+<html>
+  <body>
+    <script src="main.js"></script>
+  </body>
+</html>
+```
+
+---
+
+And now in our JavaScript file:
+
+
+`main.js`:
+```js
+// let's see if our HTML and JavaScript file are connected
+console.log("Hey! it worked!");
+```
+And now open your `index.html` in the file explorer and it should open in the browser!
+
+---
+
+The page is empty but that's okay! We should check the console to see if it worked.
+
+To open the console, you can press `F12` and go to the `Console` tab.
+
+Or you can use a keyboard shortcut (Chrome):
+* Windows: `Ctrl` + `Shift` + `J`
+* Mac: `Ctrl` + `Option` + `J`
+
+If you see `"Hey! it worked!"` Congrats!
+
+---
+
+### let's solve the homework together!
+
+### in VSCode
+
+---
+
+<!-- .slide: style="font-size:60%;" -->
+
+### homework
+
+* Create a HTML page with two text input fields: `name` and `age`
+* Add a button named `enroll`, call `onEnrollClicked()` when it’s clicked
+* Create a JavaScript file with a function `onEnrollClicked`
+* In your function, check whether the kid can join our Kindergarten (must be older than two and younger or equal to 6 years old)
+* When the button is clicked, `console.log` the name of the kid and "yes, can enter" or "no, can’t enter"
+
+* BONUS1: Set the page background red if the kid can’t enter, green otherwise
+* BONUS2: `console.log` the reason the kid can’t enter (e.g. “too young” or “too old”)
+
+
+---
+
 ### Homework - solution
 [interactive solution on jsbin!](https://jsbin.com/hoyuyum/edit?html,js,output)
 
@@ -26,13 +130,13 @@ HTML:
 
 JavaScript:
 ```js
-function onEnrollClicked() {
-  let nameElement = document.getElementById("name");
-  let ageElement = document.getElementById("age");
-  let resultElement = document.getElementById("result");
+let nameElement = document.getElementById("name");
+let ageElement = document.getElementById("age");
+let resultElement = document.getElementById("result");
 
+function onEnrollClicked() {
   let name = nameElement.value;
-  let age = Number(ageElement.value);
+  let age = parseInt(ageElement.value);
 
   if (age > 2 && age <= 6) {
     resultElement.textContent = name + " can enter Kindergarten";
@@ -78,8 +182,6 @@ let ageElement = document.getElementById("age");
 let age = ageElement.value;
 
 // if we want to convert it to number:
-let age = Number(ageElement.value);
-// OR
 let age = parseInt(ageElement.value);
 
 // we can change the contents of an HTML element
@@ -140,7 +242,9 @@ To create an object we use curly braces `{}`
 let person = {};
 ```
 
-We put any values with their names in the `{}`, these values are written as a pair `property: value`
+We put any values with their names in the `{}`, these values are written as a pair:
+
+`property: value`
 
 ```js
 let person = {
@@ -161,6 +265,20 @@ let person = {
 ```
 
 We can add as many properties as we want!
+
+---
+
+### exercise
+
+Try it yourself:
+
+create an object called: `me`, containing the following information about you:
+* name
+* age
+* hair color
+* eye color
+
+Log your object to the console
 
 ---
 
@@ -187,19 +305,16 @@ Okay, now we created an object, what can we do with it?
 // we can access the value of a property using the . operator
 let someonesName = person.name;
 
+// we can also change the value
+person.age = 10;
+
+// we can even get and set the value of an object's property by using
+person.age = person.age + 30;
 
 // we have used 'console.log' for a while now,
 // 'console' is an object that the browser creates for us
 // and 'log' is a function defined on that object
-console.log(someonesName); //John!
-
-// we can use stuff in our object as if
-// they were out of the object
-let number = mathStuff.square(person.age);
-
-// we can also change the value
-person.age = (person.age + 30) / 2;
-
+console.log(someonesName);
 ```
 <!-- .slide: style="font-size:95%;" -->
 
@@ -251,7 +366,7 @@ in VSCode, create a new `myRecipe` object with the following information:
 
 write any recipe you want, and then log it to the console.
 
-You can create a new `index.html` and `main.js` or use the same ones from last time.
+You can create a new folder with `index.html` and `main.js` or use the same ones from last time.
 
 ---
 
@@ -284,9 +399,9 @@ Don't forget to call the function, otherwise the page will remain empty!
 
 ### Task - 4
 
-create a second `myRecipe2` object with the same structure as the last one and write any recipe you want.
+create a second object: `myRecipe2` with the same structure as the last one and write any recipe you want.
 
-NOTE : do NOT replace your old `myRecipe` variable!
+NOTE : do NOT replace your old variable `myRecipe`
 
 Call your `render` function with the new object you just created, and see how the page changes!
 
@@ -326,7 +441,6 @@ document.body.style.backgroundColor = "red";
 
 ---
 
-<!--
 ### Homework
 
 Create a shipping address form, we need to have at least the following items:
