@@ -1,7 +1,7 @@
 const projectElement = document.getElementById("projects");
 
 const atTop = {
-  'slides': true, 'quizzes': true
+  './slides': true, './quizzes': true
 };
 
 function render() {
