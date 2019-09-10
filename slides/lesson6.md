@@ -113,6 +113,8 @@ If you see `"Hey! it worked!"` Congrats!
 
 ### Homework - solution
 
+See the full code on Github [here!](https://github.com/ReDI-School/js-berlin-2019-fall/tree/master/6_lesson_kindergarten)
+
 `index.html`:
 ```html
 <html>
