@@ -333,6 +333,7 @@ console.log(person.numChildren); // ????
 person.lastName = 'Smith'; // ????
 person.isMarried(); // ????
 ```
+
 ---
 
 Solutions
