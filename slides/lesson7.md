@@ -6,8 +6,9 @@ Lesson 7, Tuesday, 2019-09-12
 
 ---
 
-### Recap: Everything!
+# Recap: Everything!
 
+Feel free to interrupt and ask questions!
 
 ---
 
@@ -198,11 +199,10 @@ function myFunction() {
 
 
 ```html
-<input type="text" id="name"
-   placeholder="Insert your name" />
-```
+<input type="text" id="name" placeholder="Insert your name" />
 
-Use [`document.getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) to get a variable pointing to your HTML element
+<div id="result"></div>
+```
 
 ```js
 let nameInput = document.getElementById('name');
@@ -232,6 +232,14 @@ parsed === 123  // true
 
 ---
 
+# Questions?
+
+About anything!
+
+well maybe except the meaning of life, because that would fall within the purview of your conundrums of philosophy...
+
+---
+
 ### preject!
 
 With all this in mind, you have all the knowledge to do a small project on your own!
@@ -243,7 +251,7 @@ Every student has to do the preject. You have until the end of the lesson next T
 
 If you get stuck, ask us, ask the other students, and use Google and StackOverflow!
 
-Teachers will help if you have small questions, but we wont give you the solution.
+Teachers will help with you have small questions, but we wont give you the complete solution.
 
 ---
 
@@ -251,7 +259,7 @@ Teachers will help if you have small questions, but we wont give you the solutio
 
 Create a simple number guessing game, the webpage will have a secret number between 0 and 100, the player has to guess which number is that.
 
-The player can input a number and press a button, the webpage will tell the player if the guess is correct, or if the guessed number is bigger or smaller than the secret number.
+The player can input a guess and press a button, the webpage will tell the player if the guess is correct, or if the guessed number is bigger or smaller than the secret number.
 
 
 At the beginning, the secret number can be any number you want.
@@ -262,6 +270,6 @@ At the beginning, the secret number can be any number you want.
 
 **BONUS**: instead of using the same secret number every time, create and use a function to generate the secret number for you. Hint: use [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 
-**BONUS BONUS**: count the number of guesses until player finds the secret number
+**BONUS BONUS**: count the number of guesses until the player finds the secret number
 
 **BONUS BONUS BONUS**: let the player choose the max number (instead of 100)
