@@ -212,7 +212,7 @@ Because while the browser is executing your HTML file line by line, if it encoun
 ```html
 <html>
     <body>
-        <button onclick="onClickHandler();" />
+        <button onclick="onClickHandler();" >click me</button>
         <script src="main.js"></script>
     </body>
 </html>
