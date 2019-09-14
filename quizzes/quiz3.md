@@ -62,7 +62,7 @@ Attributes provide additional information about HTML elements. We use them in th
 
 **button** element has **onclick** attribute.
 ```html
-<button onclick="..."/>
+<button onclick="..." >click me</button>
 ```
 
 **input** element has **id** attribute.
