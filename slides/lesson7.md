@@ -2,7 +2,7 @@
 
 # Basic Frontend - Fall 2019
 
-Lesson 7, Tuesday, 2019-09-12
+Lesson 7, Thursday, 2019-09-12
 
 ---
 
