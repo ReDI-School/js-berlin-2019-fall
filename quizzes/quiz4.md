@@ -29,7 +29,7 @@ let totalAge = johnsAge + janesAge;
 console.log(totalAge);
 ```
 
-Valid but not what we had in mind. We expected to see 30 but got 1020 instead. Because, JavaScript does string concatenation when one of the operands has string type. To fix this issue, we need to use parseInt function, which converts a string value into a number value.
+Valid but not what we had in mind. We expected to see 30 but got 1020 instead. This behaviour is due to the following, JavaScript does string concatenation when one of the operands is a string type. To fix this issue, we need to use the `parseInt` function, which converts a string value into a number value.
 
 ```js
 let johnsAge = "10";
