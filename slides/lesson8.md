@@ -12,7 +12,6 @@ Already done?
 
 * **BONUS**: Output all the wrong guesses as well
 * **BONUS**: After the user wins a game, choose a new secret number and let the user play again
-* **BONUS**: Show the average amount of guesses that the user needed to find the secret number
 
 ---
 
