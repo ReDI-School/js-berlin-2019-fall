@@ -205,7 +205,7 @@ or
 
 #### 4. What is the reason that we put `<script>` tag as the last tag in the `<body>` tag?
 
-Because while the browser is executing your HTML file line by line, if it encounters a `<script>` tag, it will start executing the JavaScript code line by line before continuing the execution of your HTML. If you try to access an HTML element which is not defined yet, it will get null back. To prevent this scenario, we write the code associated with the `<script>` tag at the bottom of the `<body>` tag. 
+The reason for that is, while the browser is executing your HTML file line by line, if it encounters a `<script>` tag, it will start executing the JavaScript code line by line before continuing the execution of your HTML. If you try to access an HTML element which is not defined yet, it will return `null`. To prevent this scenario, we write the code associated with the `<script>` tag at the bottom of the `<body>` tag. 
 
 #### 5. We have decided that we want to link JavaScript file into our HTML file using src attribute. Now we want to respond to user clicks on an html element, how can we achieve that?
 
