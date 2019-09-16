@@ -34,7 +34,7 @@ console.log(totalAge);
 
 ```js
 let veryLongVariableNameToProveAPoint = "hello";
-let veryLongVariableNameToProveAPoint = veryLongVariableNameToProveAPoint + " john";
+veryLongVariableNameToProveAPoint = veryLongVariableNameToProveAPoint + " john";
 ```
 
 #### E.
