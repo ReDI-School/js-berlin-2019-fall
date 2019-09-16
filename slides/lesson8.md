@@ -269,7 +269,7 @@ console.log(person.address.city);
 
 ### Functions in Objects
 
-So far, we had `number`, `string`, `boolean` and `object` as values. How about `function`?
+So far, we had `number`, `string`, `boolean` and `object` as types of values. How about `function`?
 
 ```js
 let person = {
