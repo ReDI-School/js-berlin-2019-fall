@@ -170,7 +170,7 @@ let messageElement = document.getElementById("message");
 Then we can access the text content like this:
 
 ```js
-messageElement.textContent; // No messages
+messageElement.textContent; // "No messages"
 ```
 
 To change the content of the `<div>` element, we use:
