@@ -163,7 +163,7 @@ document.getElementById("AGE");
 
 If you do, then you get a **null** back.
 
-There are **multiple ways** of accessing an HTML element in DOM language, good news is that in this course we will be using **only** the `getElementById` method.
+There are **multiple ways** of accessing an HTML element in DOM language, good news is that in this course we will be using **mostly** the `getElementById` method.
 
 #### 2. Name two ways of executing JavaScript code using HTML.
 
