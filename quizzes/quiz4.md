@@ -128,7 +128,7 @@ We want to extract the value the user has entered into this input field. How can
 let nameElement = document.getElementById('name');
 ```
 
-Now we have a **"go-to person"** (nameElement) for making enquires about our object. This input element has two attributes, id and type. How can we get the content of a specific attribute. When an object contains many values, we use predefined names to access individual values and we use a **.** operator to do that. A predefined name and a value together is called a **property** of an object. So in our example, we use the following code in JavaScript:
+Now we have a **"go-to person"** (`nameElement`) for making enquires about our object. This input element has two attributes, id and type. How can we get the content of a specific attribute. When an object contains many values, we use predefined names to access individual values and we use a **.** operator to do that. A predefined name and a value together is called a **property** of an object. So in our example, we use the following code in JavaScript:
 
 ```js
 let age = nameElement.type;
