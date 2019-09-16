@@ -183,7 +183,7 @@ messageElement.textContent = "You have two new messages";
 
 **onEnrollClicked()**
 
-We have defined this function in our kinder garden program. Did you notice that we did not call this function in our JavaScript file. Because this is a special kind of function which gets called by the browser. It is called an event handler in JavaScript. An event handler is a function which gets called automatically by the browser and has the following characteristics:
+We have defined this function in our kindergarten program. Did you notice that we did not call this function in our JavaScript file? This is a special kind of function which gets called by the browser. It is called an event handler in JavaScript. An event handler is a function which gets called automatically by the browser and has the following characteristics:
 
 1. This function does not have a return value. [When you set a button's click handler, the code that sets it generally doesn't want to interact with the click handler later in time when a click occurs. It's a set and forget operation. In other words, event handlers are usually fairly closed pieces of code that don't depend on anything other than the event that just occurred and the global state of the program.](https://www.i-programmer.info/programming/javascript/12416-javascript-async-the-callback-a-the-controller.html?start=1)
 2. We need to create a link between an event (**click event**) and the function (**onEnrollClicked**) using the object (**button element**) where this event happens. This is called registering an event handler. We registered this event handler in HTML like this:
