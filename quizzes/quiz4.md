@@ -56,7 +56,7 @@ Valid, but if we want the text content of second paragraph element using its id,
 
 ```js
 let veryLongVariableNameToProveAPoint = "hello";
-let veryLongVariableNameToProveAPoint = veryLongVariableNameToProveAPoint + " john";
+veryLongVariableNameToProveAPoint = veryLongVariableNameToProveAPoint + " john";
 ```
 
 Valid, but there is a shorter way of typing that. In a similar situation, use this one.
