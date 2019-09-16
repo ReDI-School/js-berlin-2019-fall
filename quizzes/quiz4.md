@@ -203,7 +203,7 @@ enrollElement.onclick = onEnrollClicked;
 
 **Math.random()**
 
-Use this function when you need to generate random numbers in your code. Usually we use this function in combination with another math function Math.floor() to produce whole numbers. For example to produce numbers between 0 and 99:
+Use this function when you need to generate random numbers in your code. Usually we use this function in combination with another math function `Math.floor()` to produce whole numbers. In order to produce numbers between 0 and 99:
 
 ```js
 let number = Math.floor(Math.random() * 100);
