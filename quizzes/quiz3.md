@@ -99,7 +99,7 @@ ___
 
 In JavaScript code, we want to manipulate the web page contents, meaning we want to add new elements to the page, we want to change the style of elements, we want to react to events when the user does something on the page.
 
-For this purpose, a web browser provides programmers **a language** that can be used inside JavaScript code. We call this language DOM. Document Object Model. With DOM, JavaScript can create a dynamic HTML page.
+For this purpose, a web browser provides programmers **a "language"** that can be used inside JavaScript code. We call this language DOM. Document Object Model. With DOM, JavaScript can create a dynamic HTML page.
 
 This "language" is made up of **only objects**, specifically HTML objects. They are called **HTML objects** because each object in this language represents an HTML element in the HTML document. **Why** are they **objects** but not something else is because JavaScript uses objects natively just like it uses strings and numbers. **Important to remember**, in HTML we talk about elements, on JavaScript we call these elements objects.
 
