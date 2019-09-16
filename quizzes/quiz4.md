@@ -112,7 +112,7 @@ or use a shortcut if you are only interested in getting the content of the value
 
 ## THEORETICAL PART:
 
-### 1. Let's review the new terms we learnt in this week.
+### 1. Let's review the new terms we learned in this week.
 
 **HTML Object Property**
 
