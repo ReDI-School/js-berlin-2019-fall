@@ -31,7 +31,9 @@ if ( age < 6 ) {
 #### 1. Do you still remember what we learned in this week?
 
 **HTML attribute**
+
 ___
+
 **HTML DOM**
 
 In JavaScript code, we want to manipulate the web page contents, meaning we want to add new elements to the page, we want to change the style of elements, we want to react to events when the user does something on the page.
