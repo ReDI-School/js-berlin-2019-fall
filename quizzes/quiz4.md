@@ -9,7 +9,7 @@
 ```js
 let johnsAge = "12";
 let janesAge = 12;
-console.log( johnsAge === janesAge);
+console.log(johnsAge === janesAge);
 ```
 
 Valid, but not what we had in mind. Although John and Jane have the same age, the output is false. Because johnsAge is a string and janesAge is a number and for === comparison operator to return true, first and for most operands need to be of the same type. This means we need to convert one type of value into another type of value. In this case, we can convert string into a number. To achieve that we can use the parseInt function.
