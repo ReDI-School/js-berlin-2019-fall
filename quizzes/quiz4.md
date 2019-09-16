@@ -77,7 +77,7 @@ let veryLongVariableNameToProveAPoint += " john";
 </script>
 ```
 
-Valid. But not a good practice. Because here we are using the age variable first to access the input element which is of type object, and then we are using the same variable to access the content of the value attribute which is of type string. Using the same variable name for two different objects is not a good idea. Always use separate variable names for different objects.
+Valid. But not a good practice. Here we are using the age variable first to access the input element which is of type object, and then we are using the same variable to access the content of the value attribute which is of type string. Using the same variable name for two different objects is not a good idea. Always use separate variable names for different objects.
 
 ```html
 <input id="age" type="number" value="10" />
