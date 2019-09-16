@@ -45,7 +45,7 @@ console.log(totalAge);
 <p id="1">bye</p>
 ```
 
-Valid, but if we want the text content of second paragraph element using its id, it won't work. Because in an HTML document, you must have unique ids for your elements.
+Valid, but if we want the text content of second paragraph element using its id, it won't work. To fix this, you must have unique ids for your elements, in your HTML document .
 
 ```html
 <p id="1">hi</p>
