@@ -17,7 +17,7 @@ Valid, but not what we had in mind. Although John and Jane have the same age, th
 ```js
 let johnsAge = "12";
 let janesAge = 12;
-console.log( parseInt(johnsAge) === janesAge);
+console.log(parseInt(johnsAge) === janesAge);
 ```
 
 #### B.
