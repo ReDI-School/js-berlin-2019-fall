@@ -147,7 +147,7 @@ function onButtonClick() {
 
 ### Objects
 
-* Objects are a collection of *keys* and *values*.
+* Objects are a collection of *key* and *value* pairs.
 * The key is for us a label (like a variable name). You will also see this called a "property". Keys unlock what is behind the door.
 * The value is the type represented by the key. What is behind the door!
 * Together they create a pair. Remember: objects are made of Pairs.
