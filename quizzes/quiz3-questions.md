@@ -71,12 +71,17 @@ So did you notice that in one case we used the - character to separate multiword
 We are going to learn about the object syntax in the coming lessons.
 
 ___
+
 **document variable**
+
 ___
+
 **accessing an element if you know its id**
+
 ___
 
 #### 2. Name two ways of executing JavaScript code using HTML.
+
 #### 3. What is the advantage of linking a separate JavaScript source file into our HTML file instead of writing code directly in the HTML file?
 
 **One reason** is that, HTML uses a different syntax than the JavaScript and for a programmer switching between two different contexts might be difficult.
@@ -84,4 +89,5 @@ ___
 **Another reason** is that, we can validate an HTML code but we can not execute HTML code step by step. We can put breakpoints into a JavaScript file but we can not put breakpoints into an HTML file. So although technically we can write JavaScript code inside the HTML code, we try to keep this to a minimum.
 
 #### 4. What is the reason that we put `<script>` tag as the last tag in the `<body>` tag?
+
 #### 5. We have decided that we want to link JavaScript file into our HTML file using src attribute. Now we want to respond to user clicks on an html element, how can we achieve that?
