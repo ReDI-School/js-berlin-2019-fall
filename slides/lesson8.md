@@ -170,7 +170,7 @@ let person = {
 };
 ```
 
-* Objects start end end with curly braces `{}`
+* Objects start and end with curly braces `{}`
 * They can contain zero or more key-value pairs
 
 ---
