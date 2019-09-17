@@ -20,7 +20,7 @@ if ( age < 6 ) {
 
 #### B.
 
-```js
+```html
 <script src="main.js">
   console.log("hi");
 </script>
