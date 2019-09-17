@@ -110,6 +110,12 @@ or use a shortcut if you are only interested in getting the content of the value
 </script>
 ```
 
+```js
+// name
+// text
+// John
+```
+
 ## THEORETICAL PART:
 
 ### 1. Let's review the new terms we learned in this week.
