@@ -100,7 +100,7 @@ myElement.textContent = "Hello";
 Variables live only in their scope (the block of code surrounded by curly braces):
 
 ```js
-function foo();
+function foo()
 {
   let x = 42;
   // x is available
@@ -114,7 +114,7 @@ function foo();
 ### Variable lifetime (2)
 
 ```js
-function foo();
+function foo()
 {
   let x = 42;
   // x is available
