@@ -206,4 +206,3 @@ let person = {
 
 console.log("Hi, I am " + person.firstName + " and ...");
 ```
-
