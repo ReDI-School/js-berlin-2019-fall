@@ -252,7 +252,7 @@ let milk = {
     name: "Milk",
     price: 0.99,
     description: "Yummy cow juice"
-}
+};
 ```
 
 ---
