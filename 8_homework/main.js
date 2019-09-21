@@ -44,21 +44,3 @@ function getTotalProductPrice(product) {
 
 renderProduct(milk);
 renderProduct(bread);
-
-
-
-
-function gibElemAmIndex(arr, index) {
-
-  if (index >= arr.length) {
-    throw "array out of bounds exception";
-  }
-
-
-  return arr[index];
-}
-
-
-gibElemAmIndex([1, 2, 3], 3);
-
-// gibElemAmIndex(4, "test")
