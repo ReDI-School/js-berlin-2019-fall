@@ -8,7 +8,7 @@ Lesson 10, Thursday, 2019-09-26
 
 ### Homework of the last lesson
 
-Find the code [here](https://github.com/ReDI-School/js-berlin-2019-fall/tree/master/8_homework)
+Find the code [here](https://github.com/ReDI-School/js-berlin-2019-fall/tree/master/9_homework)
 
 ---
 
