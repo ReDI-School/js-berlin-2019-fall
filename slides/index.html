@@ -38,6 +38,7 @@
         <section data-markdown="lesson7.md" data-charset="utf-8"></section>
         <section data-markdown="lesson8.md" data-charset="utf-8"></section>
         <section data-markdown="lesson9.md" data-charset="utf-8"></section>
+        <section data-markdown="lesson10.md" data-charset="utf-8"></section>
       </div>
     </div>
     <script src="https://unpkg.com/reveal.js/js/reveal.js"></script>
@@ -65,27 +66,6 @@
         slideNumber: true,
         hash: true,
         controlsTutorial: false
-      });
-
-      // change slides on mouse wheel events:
-      const SCROLL_THRESHOLD = 40; // this variable prevents too many scroll events
-      let sumDeltaX = 0;
-      let sumDeltaY = 0;
-      document.addEventListener("wheel", e => {
-        const left = document.querySelector("body > div > aside > button.navigate-left");
-        const right = document.querySelector("body > div > aside > button.navigate-right");
-        sumDeltaX += e.deltaX;
-        sumDeltaY += e.deltaY;
-        //scroll up or down
-        if (Math.abs(sumDeltaY) > SCROLL_THRESHOLD) {
-          sumDeltaY > 0 ? right.click() : left.click();
-          sumDeltaY = 0
-        }
-        //scroll left or right
-        if (Math.abs(sumDeltaX) > SCROLL_THRESHOLD) {
-          sumDeltaX > 0 ? right.click(): left.click();
-          sumDeltaX = 0;
-        }
       });
 
     </script>

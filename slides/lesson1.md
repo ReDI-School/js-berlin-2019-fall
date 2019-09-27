@@ -4,7 +4,7 @@ Quick links to lessons:
 
 [1](#lesson1), [2](#lesson2), [3](#lesson3), [4](#lesson4),
 [5](#lesson5), [6](#lesson6), [7](#lesson7), [8](#lesson8),
-[9](#lesson9)
+[9](#lesson9), [10](#lesson10)
 
 ---
 
