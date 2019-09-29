@@ -89,7 +89,7 @@ let o = {};
 
 **Object data type**
 
-So far we have worked with JavaScript primitive data types: number, string, boolean, and undefined. We have learned about the operators we can use with these types like addition(+), multiplication(*), concatenation(+), not(!), and(&&), or(||), etc.
+So far we have worked with JavaScript primitive data types: number, string, boolean, and undefined. We have learned about the operators we can use with these types like addition(`+`), multiplication(`*`), concatenation(`+`), not(`!`), and(`&&`), or(`||`), etc.
 
 Primitive data types are useful for representing simple values in our code, like the temperature of a room, name of a person, age of a person, etc. However, in real life, we deal with entities that are more complex than a single value. For example, when I talk about the person "John", I want to express a lot of facts about John, like John has blue eyes, he has black hair, is 33 years old, drives a Mercedes, studied computer science, and is married. We could define multiple variables to state all these facts about John:
 
