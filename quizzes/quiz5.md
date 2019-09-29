@@ -73,7 +73,7 @@ let puzzle = {
 console.log(puzzle.$starts_with9);
 ```
 
-Answer: 900. I gave this example to show that we can use $, _ in property names.
+Answer: 900. I gave this example to show that we can use `$` and `_` in property names.
 
 ### 2. How do we create an empty object?
 
