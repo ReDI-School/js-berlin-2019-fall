@@ -61,7 +61,7 @@ typeof {age: 33}.age
 Answer:
 
 ```js
-number
+"number"
 ```
 
 #### E.
