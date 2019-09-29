@@ -132,7 +132,7 @@ The collection of all the facts about John creates another unit at a higher leve
 typeof john; //object
 ```
 
-To collect all the facts about John in one place, we used the comma (,) as a separator between the facts and enclosed them in curly braces ({}).
+To collect all the facts about John in one place, we used the comma (`,`) as a separator between the facts and enclosed them in curly braces (`{}`).
 
 Let's summarize what we have accomplished so far. Now we have a single variable (john) to refer to all the facts about John. To collect facts about Jane we still need to create another variable. What did we gain by creating an object? Let's answer that by way of example. Our claim is that any function which deals with a person (let this be john, jane, jack, or adam) can do so in fewer lines of code. Compare the two pieces of code.
 
