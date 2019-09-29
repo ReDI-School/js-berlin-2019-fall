@@ -49,7 +49,7 @@ typeof {}
 
 Answer: 
 ```js
-object
+"object"
 ```
 
 #### D. 
