@@ -124,7 +124,7 @@ Here, we named the facts about John and collected all of them under one roof. Th
 2. Assign a value to a named fact (for example 33)
 3. Collect all the facts about a person in one place (john)
 
-A fact without its value does not make much sense according to JavaScript. Therefore when defining a fact about John, we have to provide two things at the same time: a name (age) and a value (33) separated by colon (:). In JavaScript, we call this pair a property. In our example john has 6 properties.
+A fact without its value does not make much sense according to JavaScript. Therefore when defining a fact about John, we have to provide two things at the same time: a name (*age*) and a value (*33*) separated by colon (`:`). In JavaScript, we call this pair a property. In our example john has 6 properties.
 
 The collection of all the facts about John creates another unit at a higher level. We refer to this unit as an object. If we ask JavaScript the type of the variable john, it confirms that it is an object. 
 
