@@ -32,7 +32,7 @@ let car = {
 };
 ```
 
-Answer: we can not use semicolon (;) as a separator. Fix it by using comma (,) like this:
+Answer: we can not use semicolon (`;`) as a separator. Fix it by using comma (`,`) like this:
 
 ```js
 let car = {
