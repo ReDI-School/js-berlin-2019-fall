@@ -228,7 +228,7 @@ jack.hobby = "biking";
 
 Another name for associating a property with an object is called defining a property. Note: there is yet a third way of defining a property, but in our course, we will stick to these two methods.
 
-When it comes to giving names to object properties, we are going to use the same conventions we used for naming variables. So any combination of letters, $ and _ characters also digits provided that they are not at the beginning are welcome.
+When it comes to giving names to object properties, we are going to use the same conventions we used for naming variables. So any combination of letters, `$` and `_` characters also digits provided that they are not at the beginning are welcome.
 
 #### 2. We extract or access the value of a property like so:
 
