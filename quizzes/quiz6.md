@@ -246,7 +246,7 @@ let divElement = document.createElement("div");
 let inputElement = document.createElement("input");
 ```
 
-Now we can modify every attribute of our elements, for example:
+Now we can modify properties of our elements, for example:
 
 ```js
 divElement.textContent = "God day to you sir";
