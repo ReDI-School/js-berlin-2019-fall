@@ -227,7 +227,7 @@ By the way, there is still a small thing we can improve about our code, but I am
 
 A lot of modern HTML pages contain a minimal amount of html code which is called "static" or "fixed" code, meaning that it doesn't change over time. New HTML elements are added to the web page dynamically by JavaScript. As soon as the browser tab/window closes, the dynamic content is deleted.
 
-Use the `document.createElement` method to add new elements to your DOM. All you have to do is to provide the type of the element you wish to create as parameter. To create a `div` element, say:
+Use the `document.createElement` method to add new elements to your DOM. All you have to do is to provide the type of the element you wish to create as argument. To create a `div` element, say:
 
 ```js
 document.createElement("div");
