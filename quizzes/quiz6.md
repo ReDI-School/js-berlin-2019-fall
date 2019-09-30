@@ -130,13 +130,13 @@ In JavaScript code, you will see both the direct and indirect way of changing pr
 document.body.style.backgroundColor = "blue";
 ```
 
-Here we are directly modifying the backgroundColor property of the body's style property.
+Here we are directly changing the value of the backgroundColor property of the body's style property.
 
 ```js
 document.body.appendChild(productElement);
 ```
 
-Here, we are using an indirect method of adding a new element to our dom.
+Here, we are using an indirect method of adding a new element to our DOM.
 
 ---
 
