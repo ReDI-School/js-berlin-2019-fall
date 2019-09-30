@@ -254,7 +254,7 @@ inputElement.onchange = function() {
 }
 ```
 
-So in short, whenever you need to add new content to your dom, you start with creating a new object. Initially, every object you create using this method will be invisible to the user. You can add this element anywhere in your dom hierarchy. Because of this variability, you need to specify where you want this object to be added. For learning how to do that keep on reading...
+So in short, whenever you need to add new content to your DOM, you start with creating a new object. Initially, every object you create using this method will be invisible to the user. You can add this element anywhere in your DOM hierarchy. Because of this variability, you need to specify where you want this object to be added. For learning how to do that keep on reading...
 
 ---
 
