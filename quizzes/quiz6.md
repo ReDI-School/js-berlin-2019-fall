@@ -142,7 +142,7 @@ Here, we are using an indirect method of adding a new element to our DOM.
 
 **this variable**
 
-The short answer is that, the value of this varibale is the object “before dot”, the one used to call the method.
+The short answer is that, the value of this variable is the object “before the dot”.
 
 For more detailed description, keep on reading.
 
