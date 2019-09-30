@@ -93,7 +93,7 @@ We have already seen the direct access method: every time we use the dot operato
 
 ```js
 john.isMarried = true;
-john.supposesName = "Sally";
+john.spousesName = "Sally";
 john.livesIn = "house";
 john.numberOfChildren = 0;
 ```
