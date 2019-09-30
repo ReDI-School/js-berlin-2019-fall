@@ -167,7 +167,7 @@ adam.name = "Adam";
 adam.marryTo("Jane");
 ```
 
-We will get an error on the last line. Since marryTo is trying to use an object which does not exist anymore, it is null. So basically it is trying to run this:
+We will get an error on the last line. Since marryTo is trying to use an object which does not exist anymore, it is undefined. So basically it is trying to run this:
 
 ```js
 undefined.isMarried = true;
