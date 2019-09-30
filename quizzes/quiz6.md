@@ -142,6 +142,10 @@ Here, we are using an indirect method of adding a new element to our dom.
 
 **this variable**
 
+The short answer is that, the value of this varibale is the object “before dot”, the one used to call the method.
+
+For more detailed description, keep on reading.
+
 We said that we have a flaw in our code:
 
 ```js
@@ -158,12 +162,12 @@ let john = {
 }
 ```
 
-Imagine we have Adam, who wants to marry to Jane. To do that, we do the following:
+Imagine we have Adam, who wants to marry Jane. To do that, we do the following:
 
 ```js
 let adam = john;
-john = undefined;
 adam.name = "Adam";
+john = undefined;
 adam.marryTo("Jane");
 ```
 
@@ -173,7 +177,7 @@ We will get an error on the last line. Since marryTo is trying to use an object 
 undefined.isMarried = true;
 ```
 
-Remember dot operator requires a valid object to work on. Could we have prevented this error? Yes. Let me introduce you to the special variable `this`. When we use `this` variable in our method implementation, we stop relying on the hardcoded variable john, instead we generalize our idea by saying, that object which this function is currently part of. Let's have a look at an example:
+Remember dot operator requires a valid object to work on. Could we have prevented this error? Yes. Let me introduce you to the special variable `this`. When we use `this` variable in our method implementation, we stop relying on the hardcoded variable john, instead we generalize our idea by saying, that object which is to the left of the dot operator. Let's have a look at an example:
 
 ```js
 let a = {
@@ -188,8 +192,8 @@ let b = {
         this.amount = 20;
     }
 }
-a.increase(); // "this" variable is referring to variable a
-b.increase(); // "this" variable is referring to variable b
+a.increase(); // During the execution of a.increase(), the value of "this" variable will be a
+b.increase(); // During the execution of b.increase(), the value of "this" variable will be b
 ```
 
 With this new information, we can reimplement our code from before to fix the bug.
@@ -208,8 +212,8 @@ let john = {
 }
 
 let adam = john;
-john = undefined;
 adam.name = "Adam";
+john = undefined;
 adam.marryTo("Jane");
 ```
 
