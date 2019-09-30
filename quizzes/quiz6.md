@@ -235,7 +235,7 @@ For an input element, say:
 document.createElement("input");
 ```
 
-The real fun begins, when you start modifying the element you created, but for that you need to save the output of `createElement` like this:
+The real fun begins when you start modifying the element you created, but for that you need to assign the output of `createElement` to a variable like this:
 
 ```js
 let divElement = document.createElement("div");
