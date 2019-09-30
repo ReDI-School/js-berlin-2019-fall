@@ -208,7 +208,7 @@ let john = {
 }
 
 let adam = john;
-john = null;
+john = undefined;
 adam.name = "Adam";
 adam.marryTo("Jane");
 ```
