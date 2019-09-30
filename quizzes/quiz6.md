@@ -260,7 +260,7 @@ So in short, whenever you need to add new content to your DOM, you start with cr
 
 **appendChild**
 
-So you created an object and you don't see it on the screen. Maybe you have forgotten to add it to the dom, by telling JavaScript where to insert your element. To fix that, use `appendChild`. When using `appendChild`, keep in mind that your object needs to connect to one visible element. This could be in one of two ways:
+So you created an HTML element and you don't see it on the screen. Maybe you have forgotten to add it to the DOM, by telling JavaScript where to insert your element. To fix that, use `appendChild`. When using `appendChild`, keep in mind that your object needs to connect to one visible element. This could be in one of two ways:
 
 1. Use the `document.body` as your insertion place.
 2. Find another element which you have inserted before and be the child of that element.
