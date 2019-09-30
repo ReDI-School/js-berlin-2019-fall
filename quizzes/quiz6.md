@@ -306,7 +306,7 @@ inputElement.onchange = function() {
 }
 ```
 
-Previously, we saw how to respond to `click` events in JavaScript, by defining a function in js file and assigning this function in the `onclick` attribute of a `button` element. This was static way of registering an event handler, because we did it in the html file.
+Previously, we saw how to respond to the `click` events in JavaScript, by defining a function in the JavaScript file and assigning this function in the `onclick` attribute of a `button` element in HTML. This was the static way of registering an event handler, because we did it in the HTML file.
 
 Specifically, we wanted our code to respond to changes in the input field, we wanted to calculate the new total price based on the new value of the amount field. If an html element is generated dynamically (in js file), the code for registering the event handler also has to be in the js file.
 
