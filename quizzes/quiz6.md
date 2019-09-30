@@ -170,7 +170,7 @@ adam.marryTo("Jane");
 We will get an error on the last line. Since marryTo is trying to use an object which does not exist anymore, it is null. So basically it is trying to run this:
 
 ```js
-null.isMarried = true;
+undefined.isMarried = true;
 ```
 
 Remember dot operator requires a valid object to work on. Could we have prevented this error? Yes. Let me introduce you to the special variable `this`. When we use `this` variable in our method implementation, we stop relying on the hardcoded variable john, instead we generalize our idea by saying, that object which this function is currently part of. Let's have a look at an example:
