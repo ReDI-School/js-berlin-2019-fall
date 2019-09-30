@@ -177,7 +177,7 @@ We will get an error on the last line. Since marryTo is trying to use an object 
 undefined.isMarried = true;
 ```
 
-Remember dot operator requires a valid object to work on. Could we have prevented this error? Yes. Let me introduce you to the special variable `this`. When we use `this` variable in our method implementation, we stop relying on the hardcoded variable john, instead we generalize our idea by saying, that object which is to the left of the dot operator. Let's have a look at an example:
+Remember dot operator requires a valid object to work on. Could we have prevented this error? Yes. Let me introduce you to the special variable `this`. When we use `this` variable in our method implementation, we stop relying on the hardcoded variable `john`, instead we generalize our idea by saying, that object which is to the left of the dot operator. Let's have a look at an example:
 
 ```js
 let a = {
