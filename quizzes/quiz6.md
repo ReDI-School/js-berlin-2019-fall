@@ -310,4 +310,4 @@ Previously, we saw how to respond to the `click` events in JavaScript, by defini
 
 Specifically, we wanted our code to respond to changes in the input field, we wanted to calculate the new total price based on the new value of the amount field. If an html element is generated dynamically (in js file), the code for registering the event handler also has to be in the js file.
 
-In our course, we will use this pattern repetitively. Every time you create a new html element, ask yourself this question: am I interested in responding to an event(onchange, onclick, onsubmit, etc.) this element will generate? If your answer is yes, then add an event handler just the same way as in the sample code.
+In our course, we will use this pattern repeatedly. Every time you create a new HTML element, ask yourself this question: Am I interested in responding to an event (`onchange`, `onclick`, `onsubmit`, etc.) that this element will generate? If your answer is "yes", then add an event handler just the same way as in the sample code.
