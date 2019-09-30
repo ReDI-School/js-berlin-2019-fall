@@ -221,7 +221,7 @@ By the way, there is still a small thing we can improve about our code, but I am
 
 **document.createElement**
 
-One big part of web development is to start with a minimal amount of html code which is static by nature and add new elements to the web page on the fly. Meaning that, you will make things appear inside the browser screen area but as soon as the browser tab closes, the dynamic content will disappear.
+A lot of modern HTML pages contain a minimal amount of html code which is called "static" or "fixed" code, meaning that it doesn't change over time. New HTML elements are added to the web page dynamically by JavaScript. As soon as the browser tab/window closes, the dynamic content is deleted.
 
 Your number one tool for adding new elements to your dom is linked to mastering the document.createElement method. Likely it is very easy to master. All you have to do is to provide the type of element you wish to create as input parameter. To create a `div` element, simply say:
 
