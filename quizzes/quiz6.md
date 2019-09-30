@@ -122,7 +122,7 @@ let john = {
 
 Now our object `john` can happily marry Sally. This implementation has a small flaw which we are going to fix soon, when we talk about **`this`** variable. By the way, a function which is a part of an object property is called a **method**. Worth remembering.
 
-To summarize, we implement functions inside the object definition, to create an encapsulation against the outside world. To call a function which belongs to an object, we need to know the name of the property this function is associated with and also we need to have a variable which references the object we are trying to change.
+To summarize, we implement functions inside the object definition, to create an encapsulation against the outside world. To call a function which belongs to an object, we need two things: 1. the object to whom this function belongs (`john`). 2. the name of the property, this function is associated with (`marryTo`).
 
 In JavaScript code, you will see both the direct and indirect way of changing properties of objects. Take the following snippets from our code examples:
 
