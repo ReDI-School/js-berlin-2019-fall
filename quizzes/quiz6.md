@@ -162,7 +162,7 @@ Imagine we have Adam, who wants to marry to Jane. To do that, we do the followin
 
 ```js
 let adam = john;
-john = null;
+john = undefined;
 adam.name = "Adam";
 adam.marryTo("Jane");
 ```
