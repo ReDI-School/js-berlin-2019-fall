@@ -75,7 +75,7 @@ function willChange(product) {
     console.log(product.amount); // 10
 }
 
-let milk = { amount: 5};
+let milk = { amount: 5 };
 console.log(milk.amount); // 5
 willChange(milk);
 console.log(milk.amount); // 10
