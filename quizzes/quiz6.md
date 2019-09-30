@@ -268,7 +268,7 @@ So you created an HTML element and you don't see it on the screen. Maybe you hav
 Example for the usage of the first way:
 
 ```js
-document.appendChild(productElement);
+document.body.appendChild(productElement);
 ```
 
 For the second way:
