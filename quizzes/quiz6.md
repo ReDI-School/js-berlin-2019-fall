@@ -277,7 +277,7 @@ For the second way:
 productElement.appendChild(inputElement);
 ```
 
-Here we are assuming that `productElement` was inserted to the dom previously.
+Here we are assuming that `productElement` was inserted to the DOM previously.
 
 ---
 
