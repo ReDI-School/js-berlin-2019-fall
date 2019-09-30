@@ -285,7 +285,7 @@ Here we are assuming that `productElement` was inserted to the DOM previously.
 
 "What is a render function" is a question asked by some students. According to wikipedia, "rendering" is generating an image from a model by means of computer programs. This definition fits the purpose of our `render` function really well.
 
-In our web store application, we created objects, which hold the important data for our products, such as the amount, price, description. This data on its own is not displayable in the browser. We can not submit our data to browser and say display them. We need to convert this data into visual components that the browser understands, which the user can interact with. These components are html elements. In our application, we created and displayed the html elements inside this function.
+In our web store application, we created objects, which hold the important data for our products, such as the amount, price, description. This data on its own is not displayable in the browser. We can not pass our data to the browser and say: "display them". We need to convert this data into visual components that the browser understands, that the user can interact with. These components are HTML elements. In our application, we created and displayed the html elements inside the `render` function.
 
 Every time we are faced with conversion from data into html elements, this operation can be called **"rendering"**. This function could be named differently, but it is customary to call it render.
 
