@@ -287,7 +287,7 @@ Here we are assuming that `productElement` was inserted to the DOM previously.
 
 In our web store application, we created objects, which hold the important data for our products, such as the amount, price, description. This data on its own is not displayable in the browser. We can not pass our data to the browser and say: "display them". We need to convert this data into visual components that the browser understands, that the user can interact with. These components are HTML elements. In our application, we created and displayed the html elements inside the `render` function.
 
-Every time we are faced with conversion from data into html elements, this operation can be called **"rendering"**. This function could be named differently, but it is customary to call it render.
+Every time we are faced with the conversion from data into HTML elements, the operation can be called **"rendering"**. This function could be named differently, but it is customary to call it "render".
 
 ---
 
