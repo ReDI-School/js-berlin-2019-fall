@@ -151,7 +151,7 @@ let john = {
     livesIn: "2 bed room flat",
     marryTo: function(spName) {
         john.isMarried = true;
-        john.supposesName = spName;
+        john.spousesName = spName;
         john.livesIn = "house";
         john.numberOfChildren = 0;
     }
