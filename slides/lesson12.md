@@ -1,3 +1,9 @@
+<!-- .slide: id="lesson12" -->
+
+# Basic Frontend - Fall 2019
+
+Lesson 12, Tuesday, 2019-10-01
+
 ---
 
 ### Arrays
