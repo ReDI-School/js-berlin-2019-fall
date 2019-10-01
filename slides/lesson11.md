@@ -122,7 +122,7 @@ How can we express the three parts of our while loop better?
 We can use a for loop:
 
 ```js
-for (init; test; update ) {
+for (init; test; update) {
   // body
 }
 ```
