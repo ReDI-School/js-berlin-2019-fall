@@ -203,8 +203,9 @@ hello Carol
 
 ### Exercise
 
-Create an array with a few numbers, e.g. `[1, 4, 2.99, 8]`
+Create an array containing a few numbers
 
+* Output the last element of your array
 * Output the sum of all the numbers in the array
 * Output the largest number of the array
 * Output the average (mean) of all numbers (sum of all numbers divided by amount of numbers)
@@ -212,6 +213,7 @@ Create an array with a few numbers, e.g. `[1, 4, 2.99, 8]`
 
 ---
 
-### Exercise
+### BONUS Exercise
 
+* Write a function that takes a number and an array of numbers as input parameter. Return the index of the number if it is in the array, otherwise return `-1`
 * Create an array with 3 elements, each element should be a recipe, each recipe should have at least a name and an array of ingredients.
