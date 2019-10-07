@@ -2,7 +2,7 @@
 
 # Basic Frontend - Fall 2019
 
-Lesson 12, Tuesday, 2019-10-01
+Lesson 12, Tuesday, 2019-10-08
 
 ---
 
@@ -37,26 +37,12 @@ let stuff = ["John", 20, true, undefined];
 
 ---
 
-### arrays and objects
+### accessing elements
 
-the difference between arrays and objects is that values in arrays don't need a name.
+we can access elements in the array by number
 
-```js
-// the value 25 has the name 'age'
-let person = {
-  age: 25
-};
-console.log(person.age); //25
+the numbering starts at `0`:
 
-// how can I access the value 25 here?
-person = [25];
-```
-
----
-
-we can access elements in the array by number!
-
-the numbering starts at `0`
 ```js
 let cars = ["Saab", "Volvo", "BMW"];
 
@@ -65,7 +51,50 @@ console.log(cars[1]); // Volvo
 console.log(cars[2]); // BMW
 ```
 
-The order of elements in the array matter.
+The order of elements in the array matter!
+
+---
+
+### accessing invalid elements
+
+```js
+let cars = ["Saab", "Volvo", "BMW"];
+
+console.log(cars[0]); // Saab
+console.log(cars[1]); // Volvo
+console.log(cars[2]); // BMW
+console.log(cars[3]); // ???
+```
+
+---
+
+### accessing invalid elements (2)
+
+```js
+let cars = ["Saab", "Volvo", "BMW"];
+
+console.log(cars[0]); // Saab
+console.log(cars[1]); // Volvo
+console.log(cars[2]); // BMW
+console.log(cars[3]); // undefined
+```
+
+---
+
+### arrays and objects
+
+the difference between arrays and objects is that values in arrays don't need a name.
+
+```js
+// the property called 'age' has a value of 25
+let person = {
+  age: 25
+};
+console.log(person.age); //25
+
+// how can I access the value 25 here?
+person = [25];
+```
 
 ---
 
@@ -91,13 +120,43 @@ console.log(names[3]); // undefined
 
 ---
 
-We can change any value using the same syntax
+### modifying arrays
+
+We can change any value using brackets:
+
 ```js
 let names = ["Alice", "Bob", "Carol"];
 
 names[1] = "David";
 
 console.log(names[1]); // David
+```
+
+---
+
+### getting the length of an array
+
+We can get the length of an array with the `.length` property:
+
+```js
+let names = ["Alice", "Bob", "Carol"];
+console.log(names.length); // 3
+```
+
+---
+
+### appending new values
+
+We can append new values to an array using `.push()`:
+
+```js
+let names = ["Alice", "Bob", "Carol"];
+console.log(names.length); // 3
+
+names.push("David");
+
+console.log(names.length); // 4
+console.log(names[3]); // David
 ```
 
 ---
@@ -118,10 +177,41 @@ let people = [
   }
 ];
 ```
----
-
-### exercise
-
-Create an array with 3 elements, each element should be a recipe, each recipe should have at least a name and an array of ingredients.
 
 ---
+
+### Exercise
+
+* Step 1: Create an array with your 3 top friends (or foes)
+* Step 2: Say "hello" on console to each friend, e.g.:
+
+```txt
+hello Alice
+hello Bob
+hello Carol
+```
+
+---
+
+### Exercise - cont.
+
+* Step 1: Create an array with your 3 top friends (or foes)
+* Step 2: Say "hello" on console to each friend
+* **Step 3**: Same as Step 2, but with a `for` loop
+
+---
+
+### Exercise
+
+Create an array with a few numbers, e.g. `[1, 4, 2.99, 8]`
+
+* Output the sum of all the numbers in the array
+* Output the largest number of the array
+* Output the average (mean) of all numbers (sum of all numbers divided by amount of numbers)
+* Create a new array containing only numbers of the original array that are smaller than 5
+
+---
+
+### Exercise
+
+* Create an array with 3 elements, each element should be a recipe, each recipe should have at least a name and an array of ingredients.
