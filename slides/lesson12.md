@@ -39,9 +39,25 @@ let stuff = ["John", 20, true, undefined];
 
 ### accessing elements
 
-we can access elements in the array by number
+We can access elements in the array by number
 
-the numbering starts at `0`:
+The numbering starts at `0`:
+
+```js
+let cars = ["Saab", "Volvo", "BMW"];
+
+console.log(cars[0]); // Saab
+console.log(cars[1]); // Volvo
+// QUIZ - how do we access "BMW" ?
+```
+
+---
+
+### accessing elements - solution
+
+We can access elements in the array by number
+
+The numbering starts at `0`:
 
 ```js
 let cars = ["Saab", "Volvo", "BMW"];
@@ -83,7 +99,7 @@ console.log(cars[3]); // undefined
 
 ### arrays and objects
 
-the difference between arrays and objects is that values in arrays don't need a name.
+The difference between arrays and objects is that values in arrays don't need a name.
 
 ```js
 // the property called 'age' has a value of 25
@@ -209,11 +225,11 @@ Create an array containing a few numbers
 * Output the sum of all the numbers in the array
 * Output the largest number of the array
 * Output the average (mean) of all numbers (sum of all numbers divided by amount of numbers)
-* Create a new array containing only numbers of the original array that are smaller than 5
 
 ---
 
 ### BONUS Exercise
 
+* Create a new array containing only numbers of the original array that are smaller than 5
 * Write a function that takes a number and an array of numbers as input parameter. Return the index of the number if it is in the array, otherwise return `-1`
 * Create an array with 3 elements, each element should be a recipe, each recipe should have at least a name and an array of ingredients.
