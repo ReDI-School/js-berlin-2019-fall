@@ -200,7 +200,10 @@ for (let number of numbers) {
 console.log(sum);
 
 ```
+
+
 ---
+
 
 ```js
 let people = [
@@ -229,7 +232,7 @@ for (let person of people) {
 
 ---
 
-# Live coding!
+# get coding!
 
 We are going to use everything we learned in this exercise, if you have any questions, feel free to ask.
 
