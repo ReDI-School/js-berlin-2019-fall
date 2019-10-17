@@ -2,7 +2,7 @@
 
 # Basic Frontend - Fall 2019
 
-Lesson 14, Thursday, 2019-10-16
+Lesson 14, Thursday, 2019-10-17
 ---
 
 ### Recap: What's in our Toolbox?
