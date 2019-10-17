@@ -1,9 +1,8 @@
-<!-- .slide: id="lesson15" -->
+<!-- .slide: id="lesson14" -->
 
 # Basic Frontend - Fall 2019
 
-Lesson 15, Tuesday, 2019-10-08
-
+Lesson 14, Thursday, 2019-10-16
 ---
 
 ### Recap: What's in our Toolbox?
@@ -188,8 +187,9 @@ Create this in JavaScript
 ```
 
 ```js
+let items = ["Bread", "Butter", "Cheese"];
 let listElement = document.createElement("ul");
-for (let item of ["Bread", "Butter", "Cheese"]) {
+for (let item of items) {
    let liElement = document.createElement("li");
    liElement.textContent = item;
    liElement.appendChild(itemElement);
@@ -198,3 +198,14 @@ document.body.appendChild(listElement);
 ```
 
 ---
+
+### last Homework
+let us finish the homework from last time.
+
+---
+
+### more?
+
+* Add a button to each recipe, when you click on it, it will hide or reveal the contents of the recipe.
+* When hovering over the title of the recipe, change the color of the text
+* Strike a line through one of the ingredients if the user clicks on it
