@@ -210,3 +210,18 @@ let us finish the homework from last time.
 * Add a button to each recipe, when you click on it, it will hide or reveal the contents of the recipe.
 * When hovering over the title of the recipe, change the color of the text
 * Strike a line through one of the ingredients if the user clicks on it
+
+---
+
+### solutions
+
+[See the code on github](https://github.com/ReDI-School/js-berlin-2019-fall/tree/master/14_recipes)
+
+---
+
+### even more?
+
+* make the font of the name of the recipe bigger when the user hovers over it.
+* modify your recipes array, add a new property to each recipe which contains the url of an image of that recipe, use this url to create and add an `img` element to your recipe.
+* make sure the new image is also hidden when the user clicks on the hide button
+* make the image bigger when the user clicks on it
