@@ -124,8 +124,8 @@ typeof JSON.parse('{"city":"Berlin"}'); // "object"
 
 ### What is missing?
 
-* Now we now how to **talk** to a server: REST API
-* Now we now how to **exchange** data with a server: JSON
+* Now we know how to **talk** to a server: REST API
+* Now we know how to **exchange** data with a server: JSON
 * But how do we **connect** to the server from within JavaScript?
 
 ---
