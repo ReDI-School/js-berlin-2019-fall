@@ -185,7 +185,7 @@ async function fetchMyApi() {
 
 * JavaScript introduced two new keywords: `async` and `await`
 * We can use the `await` keyword only in `async` functions!
-* `await` executes the call, continues executing the code which is after the `async` function call
+* `await` executes the call, continues executing the code which is after the `async` function
 * once the result of the `await` is available, the code in the `async` function resumes
 * This allows us to execute long-running functions without blocking the browser
 
