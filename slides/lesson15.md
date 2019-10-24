@@ -154,7 +154,11 @@ function load(url, callback) {
 ### fetch - Promises
 
 ```js
-fetch("http://something.com").then(function(response) { return response.json(); }).then(function(json) { console.log("got json: " + json); });
+fetch("http://something.com").then(function(response) {
+    return response.json();
+  }).then(function(json) {
+    console.log("got json: " + json);
+  });
 ```
 
 ---
