@@ -50,7 +50,7 @@ Local/Client Implementation
 
 // locations of BVG stations by name
 function getLocations(name){
-  // logic to retrive the location
+  // logic to retrieve the location
   // ...
   // ...
   return location
