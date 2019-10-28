@@ -24,11 +24,17 @@ What will we learn today?
 
 ---
 
-Yuppy! Who does not love Berlin:
+Yuppy! So who does not love the ...
 
-... using the beloved BVG REST API:
+... **Berlin Public Transportation System**.
 
-https://2.bvg.transport.rest
+
+---
+
+p.s. They have an API
+
+https://1.bvg.transport.rest
+
 
 ---
 
@@ -60,9 +66,51 @@ API Request
 ```js
 
 // locations of BVG stations by name
-// https://2.bvg.transport.rest/locations?query=Nordbahnhof
+// https://1.bvg.transport.rest/locations?query=Nordbahnhof
 
-
-let locations = await fetch("https://2.bvg.transport.rest/locations?query=Nordbahnhof")
+let locations = await fetch("https://1.bvg.transport.rest/locations?query=Nordbahnhof")
 ```
+
+---
+
+**GET parameters** can be used to query API's.
+
+In order to know which GET parameter can be used we neeed to 
+check the **API specification**. 
+
+---
+
+BVG API Specifications:
+https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
+
+---
+
+Exercise 1: Get the station ID for **Nordbahnof** from the API.
+
+---
+
+Exercise 2: Use the BVG api to find out the duration of a journey 
+from **Nordbahnof** to **U. Bernauerstrase** by tram.
+
+---
+
+```
+let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=900000100003&results=3&bus=false&tickets=true
+
+```
+
+---
+
+Exercise 3: Implement a simple html form with:
+1. An origin field
+2. An destination field
+3. A submit button: when clicked it will dispaly the duration of a journey between the origin and the destination
+by tram. 
+
+*Note: destination and origin are fields that will receive the ID of the station.*
+---
+
+
+
+
 
