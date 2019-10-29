@@ -22,7 +22,7 @@ Lesson 17, Tuesday, 2019-10-28
 
 ---
 
-Yuppy! So who does not **love** the ...
+Yuppy! So who does not **LOVE** the ...
 
 ... **Berlin Public Transportation System**.
 
@@ -64,10 +64,12 @@ let locations = getLocations("Berlin Nordbahnhof")
 Special charaters have to be encoded when used in query parameters.
 
 ```js
- encodeURIComponent("Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
+  // encoding a sample query
+  encodeURIComponent("Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
+
 ```
 
-*"...safe and secure format that can be transmitted over the internet"""*
+*"...safe and secure format that can be transmitted over the internet"*
 
 ---
 
