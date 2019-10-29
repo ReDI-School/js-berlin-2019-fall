@@ -19,8 +19,8 @@ What did we learn last time?
 
 What will we learn today?
 
- * API: GET Parameters
- * API: External Libraries
+ * API: **GET Parameters**
+ * API: **External Libraries**
 
 ---
 
@@ -95,7 +95,7 @@ from **Nordbahnof** to **U. Bernauerstrase** by tram.
 ---
 
 ```
-let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=900000100003&results=3&bus=false&tickets=true
+let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=900000100003&bus=false&tickets=true
 
 ```
 
