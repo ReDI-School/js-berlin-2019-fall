@@ -65,7 +65,8 @@ Special charaters have to be encoded when used in query parameters.
 
 ```js
   // encoding a sample query
-  encodeURIComponent("Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
+  encodeURIComponent("Berlin Nordbahnhof") 
+  // "%3Fquery%3DBerlin%20Nordbahnhof"
 
 ```
 
@@ -81,7 +82,8 @@ Special charaters have to be encoded when used in query parameters.
 let baseUrl = "https://1.bvg.transport.rest/locations"
 
 // encoding needed because of the white space
-let getQuery = encodeURIComponent("?query=Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
+let getQuery = encodeURIComponent("?query=Berlin Nordbahnhof") 
+// "%3Fquery%3DBerlin%20Nordbahnhof"
 
 // locations api request
 let locations = await fetch(baseUrl + getQuery)
@@ -107,20 +109,23 @@ https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
 - import scripts from **"outside"**
 - **reuse logic** from other developers
 
+
 ---
 
-*Life is all about **Moment(s).js** * 
 
--- Random Made up Quote
-
---- 
+*Life is all about **Moment(s).js** .*
 
 
-### Moment.js 
+---
+
+
+[### Moment.js](https://momentjs.com/)
+
 Parse, validate, manipulate, and display **dates** and **times** in JavaScript.
 
 
---- 
+---
+
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
@@ -129,6 +134,7 @@ Parse, validate, manipulate, and display **dates** and **times** in JavaScript.
     console.log("With format: " + moment().format("MMM-Do-YYYY"));
 </script>
 ```
+
 
 ---
 
@@ -163,9 +169,10 @@ Homework: Implement a simple **HTML form** with:
 2. A **destination** field
 3. A **submit button**: when clicked it will display the duration of a journey between the origin and the destination by **tram**. 
 
+---
+
 *Note: destination and origin are fields that will receive the ID of the station.*
 
----
 
 
 
