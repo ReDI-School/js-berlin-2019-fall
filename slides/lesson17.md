@@ -50,7 +50,7 @@ Local/Client Implementation
 
 // locations of BVG stations by name
 function getLocations(name){
-  // logic to retrive the location
+  // logic to retrieve the location
   // ...
   // ...
   return location
@@ -103,7 +103,7 @@ let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=90000010000
 
 Exercise 3: Implement a simple html form with:
 1. An origin field
-2. An destination field
+2. A destination field
 3. A submit button: when clicked it will dispaly the duration of a journey between the origin and the destination
 by tram. 
 
