@@ -106,7 +106,15 @@ Intro: External Libraries
 
 ---
 
+*"Life is all about Moment(s).js"* -- Random Quote
 
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+<script>
+    console.log("No format: " + new Date());
+    console.log("With format: " + moment().format("MMM-Do-YYYY"));
+</script>
+```
 
 ---
 
@@ -127,7 +135,7 @@ to **U. Bernauer Straße** by **tram**.
 
 ---
 
-```
+```js
 let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=900000100003&bus=false&tickets=true
 
 ```
