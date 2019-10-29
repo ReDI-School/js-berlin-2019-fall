@@ -149,11 +149,11 @@ from the BVG API.
 
 ---
 
-Exercise 2: Use the BVG api to find out 
+Exercise 2: Use the BVG API to find out 
 the **duration of a journey** from **Berlin Nordbahnhof** 
 to **U. Bernauer Straße** by **tram**. 
 
-__Hint: get the departure and arrival time date and substract it using moment.js.__
+*Hint: get the departure and arrival time date and substract it using moment.js.*
 
 ---
 
@@ -164,12 +164,16 @@ let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=90000010000
 
 ---
 
-Homework: Implement a simple **HTML form** with:
+### Homework
+
+Implement a simple **HTML form** with:
 1. An **origin** field
 2. A **destination** field
 3. A **submit button**: when clicked it will display the duration of a journey between the origin and the destination by **tram**. 
 
 ---
+
+### Homework
 
 *Note: destination and origin are fields that will receive the ID of the station.*
 
