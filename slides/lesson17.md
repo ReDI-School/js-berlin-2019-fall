@@ -66,7 +66,7 @@ Special charaters have to be encoded when used in query parameters.
 ```js
   // encoding a sample query
   encodeURIComponent("Berlin Nordbahnhof") 
-  // "%3Fquery%3DBerlin%20Nordbahnhof"
+  // "query%3DBerlin%20Nordbahnhof"
 
 ```
 
@@ -79,10 +79,10 @@ Special charaters have to be encoded when used in query parameters.
 ```js
 
 // locations of BVG stations by name
-let baseUrl = "https://1.bvg.transport.rest/locations"
+let baseUrl = "https://1.bvg.transport.rest/locations?"
 
 // encoding needed because of the white space
-let getQuery = encodeURIComponent("?query=Berlin Nordbahnhof") 
+let getQuery = encodeURIComponent("query=Berlin Nordbahnhof") 
 // "%3Fquery%3DBerlin%20Nordbahnhof"
 
 // locations api request
