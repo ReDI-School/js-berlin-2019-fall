@@ -175,7 +175,7 @@ Implement a simple **HTML form** with:
 
 ### Homework
 
-*Note: destination and origin are fields that will receive the ID of the station.*
+Destination and origin are fields that will receive the ID of the station.
 
 
 
