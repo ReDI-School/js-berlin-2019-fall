@@ -99,7 +99,7 @@ check the **API specification**.
 ---
 
 **BVG API** Specifications:
-https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
+https://github.com/derhuerst/bvg-rest/blob/2/docs/index.md
 
 
 ---
