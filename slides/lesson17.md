@@ -96,6 +96,18 @@ check the **API specification**.
 **BVG API** Specifications:
 https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
 
+
+---
+
+Intro: External Libraries
+
+- import scripts from **"outside"**
+- **reuse logic** from other developers
+
+---
+
+
+
 ---
 
 
@@ -122,7 +134,7 @@ let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=90000010000
 
 ---
 
-Exercise 3: Implement a simple **HTML form** with:
+Homework: Implement a simple **HTML form** with:
 1. An **origin** field
 2. A **destination** field
 3. A **submit button**: when clicked it will display the duration of a journey between the origin and the destination by **tram**. 
@@ -130,6 +142,7 @@ Exercise 3: Implement a simple **HTML form** with:
 *Note: destination and origin are fields that will receive the ID of the station.*
 
 ---
+
 
 
 
