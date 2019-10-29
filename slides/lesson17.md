@@ -8,16 +8,16 @@ Lesson 17, Tuesday, 2019-10-28
 
 ### Recap
 
-What did we learn last time?
+ ### What did we learn last time?
 
- * JSON
- * fetch and APIs
- * async / await
+ * **JSON**
+ * **fetch()** and **APIs**
+ * ```js async / await```
 
 
 ---
 
-What will we learn today?
+### What will we learn today?
 
  * API: **GET Parameters**
  * API: **External Libraries**
@@ -31,7 +31,7 @@ Yuppy! So who does not love the ...
 
 ---
 
-p.s. They have an API
+p.s. They have an **API**:
 
 https://1.bvg.transport.rest
 
@@ -40,11 +40,11 @@ https://1.bvg.transport.rest
 
 ### API: GET Parameters
 
-GET parameters are used in API call just like arguments are used in functions.
+**GET parameters** are used in an **API** call just like **arguments** are used in **functions**.
 
 ---
 
-Local/Client Implementation
+### Local/Client Implementation
 
 ```js
 
@@ -61,7 +61,7 @@ let locations = getLocations("Nordbahnhof")
 
 ---
 
-API Request
+### API Request
 
 ```js
 
@@ -85,6 +85,12 @@ https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
 
 ---
 
+
+## Practice Time!
+
+
+---
+
 Exercise 1: Get the station ID for **Nordbahnof** from the API.
 
 ---
@@ -101,13 +107,13 @@ let url = https://1.bvg.transport.rest/journeys?from=900000007104&to=90000010000
 
 ---
 
-Exercise 3: Implement a simple html form with:
-1. An origin field
-2. A destination field
-3. A submit button: when clicked it will dispaly the duration of a journey between the origin and the destination
-by tram. 
+Exercise 3: Implement a simple **HTML form** with:
+1. An **origin** field
+2. A **destination** field
+3. A **submit button**: when clicked it will display the duration of a journey between the origin and the destination by tram. 
 
 *Note: destination and origin are fields that will receive the ID of the station.*
+
 ---
 
 
