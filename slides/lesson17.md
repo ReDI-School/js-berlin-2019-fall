@@ -80,9 +80,10 @@ Special charaters have to be encoded when used in query parameters.
 // locations of BVG stations by name
 let baseUrl = "https://1.bvg.transport.rest/locations"
 
-// encoding needed bv of the white space
+// encoding needed because of the white space
 let getQuery = encodeURIComponent("?query=Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
 
+// locations api request
 let locations = await fetch(baseUrl + getQuery)
 ```
 
@@ -101,14 +102,25 @@ https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
 
 ---
 
-Intro: External Libraries
+### Intro: External Libraries
 
 - import scripts from **"outside"**
 - **reuse logic** from other developers
 
 ---
 
-*"Life is all about Moment(s).js"* -- Random Quote
+*Life is all about **Moment(s).js** * 
+
+-- Random Made up Quote
+
+--- 
+
+
+### Moment.js 
+Parse, validate, manipulate, and display **dates** and **times** in JavaScript.
+
+
+--- 
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
@@ -133,7 +145,9 @@ from the BVG API.
 
 Exercise 2: Use the BVG api to find out 
 the **duration of a journey** from **Berlin Nordbahnhof** 
-to **U. Bernauer Straße** by **tram**.
+to **U. Bernauer Straße** by **tram**. 
+
+__Hint: get the departure and arrival time date and substract it using moment.js.__
 
 ---
 
