@@ -130,8 +130,8 @@ Parse, validate, manipulate, and display **dates** and **times** in JavaScript.
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 <script>
-    console.log("No format: " + new Date());
-    console.log("With format: " + moment().format("MMM-Do-YYYY"));
+    console.log("No format: " + "01-01-2019");
+    console.log("With format: " + moment("01-01-2019").format("MMM-Do-YYYY"));
 </script>
 ```
 
