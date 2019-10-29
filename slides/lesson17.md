@@ -54,8 +54,20 @@ function getLocations(name){
   return location
 }
 
-let locations = getLocations("Nordbahnhof")
+let locations = getLocations("Berlin Nordbahnhof")
 ```
+
+---
+
+### Encoding URL Parameters
+
+Special charaters have to be encoded when used in query parameters.
+
+```js
+ encodeURIComponent("Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
+```
+
+*"...safe and secure format that can be transmitted over the internet"""*
 
 ---
 
@@ -64,9 +76,12 @@ let locations = getLocations("Nordbahnhof")
 ```js
 
 // locations of BVG stations by name
-// https://1.bvg.transport.rest/locations?query=Nordbahnhof
+let baseUrl = "https://1.bvg.transport.rest/locations"
 
-let locations = await fetch("https://1.bvg.transport.rest/locations?query=Nordbahnhof")
+// encoding needed bv of the white space
+let getQuery = encodeURIComponent("?query=Berlin Nordbahnhof") // "%3Fquery%3DBerlin%20Nordbahnhof"
+
+let locations = await fetch(baseUrl + getQuery)
 ```
 
 ---
@@ -89,7 +104,7 @@ https://github.com/derhuerst/bvg-rest/blob/master/docs/index.md
 
 ---
 
-Exercise 1: Get the station **ID** for **Nordbahnof** 
+Exercise 1: Get the station **ID** for **Nordbahnhof** 
 from the BVG API.
 
 ---
