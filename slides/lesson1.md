@@ -6,7 +6,7 @@ Quick links to lessons:
 [5](#lesson5), [6](#lesson6), [7](#lesson7), [8](#lesson8),
 [9](#lesson9), [10](#lesson10), [11](#lesson11), [12](#lesson12),
 [13](#lesson13), [14](#lesson14), [15](#lesson15), [16](#lesson16), 
-[17](#lesson17)
+[17](#lesson17), [18](#lesson18)
 
 
 
