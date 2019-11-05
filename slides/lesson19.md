@@ -26,7 +26,7 @@ Lesson 19, Thursday, 2019-11-05
 
 ### Leaflet, cont.
 
-* Next, we need to add a HTML `<div>` element that should contain the map:
+* Next, we need to add an HTML `<div>` element in the HTML that should contain the map:
 
 ```html
 <div id="mapid"></div>
