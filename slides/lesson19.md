@@ -9,7 +9,23 @@ Lesson 19, Thursday, 2019-11-05
 ### Introducing Leaflet
 
 * Leaflet (https://leafletjs.com/) is a neat little library to render maps
-* In order to use it, we need to include the leaflet CSS and lealet JavaScript library in the HTML `<head>` section:
+* Leaflet has a neat Quick-Start guide (https://leafletjs.com/examples/quick-start/) but uses some confusing JavaScript (chaining)
+* We're providing our own template instead :)
+
+---
+
+### Leaflet: Steps
+
+1. We need to include the Leaflet library and the CSS
+1. We need to create a HTML `<div>` element that contains the map
+1. We need to create a JavaScript `L.map` object that renders the map
+1. We need to tell Leaflet where to get the map data from, using a `L.layer` object
+
+---
+
+### Step 1
+
+* Include the leaflet CSS and leaflet JavaScript library in the HTML `<head>` section:
 
 ```html
 <head>
@@ -24,9 +40,9 @@ Lesson 19, Thursday, 2019-11-05
 
 ---
 
-### Leaflet, cont.
+### Step 2
 
-* Next, we need to add an HTML `<div>` element in the HTML that should contain the map:
+* Next, we need to add an HTML `<div>` element in the HTML `<body>` that should contain the map:
 
 ```html
 <div id="mapid"></div>
@@ -40,9 +56,9 @@ Lesson 19, Thursday, 2019-11-05
 
 ---
 
-### Setting up the map
+### Step 3
 
-* All leaflet functions are in the `L` object:
+* Create a map object in JavaScript. Remember - All leaflet functions are in the `L` object (namespace):
 
 ```js
 // create a new map object, pass the <div> id as parameter:
@@ -53,7 +69,20 @@ mymap.setView([52.531446, 13.384752], 13);
 
 ---
 
-### Setting up a layer
+### Step 4 - HERE Maps
+
+* Create a Layer to tell Leaflet where to get the data from, e.g. [HERE](https://here.com) or [Mapbox](https://mapbox.com):
+
+```js
+let layer = L.tileLayer(
+	"http://1.base.maps.cit.api.here.com/maptile/2.1/maptile/newest/normal.day/{z}/{x}/{y}/256/png8?app_id=XXX&app_code=XXX"
+);
+layer.addTo(mymap);
+```
+
+---
+
+### Step 4 - Mapbox
 
 ```js
 let layer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -73,7 +102,7 @@ You can copy paste our code to your machine to try it out:
 
 https://github.com/ReDI-School/js-berlin-2019-fall/tree/master/19_leaflet1
 
-The `accessToken` is on the slack channel. If you want to create your own, visit https://www.mapbox.com/studio/account/tokens/
+The access tokens are on the slack channel. If you want to create your own, visit https://www.mapbox.com/studio/account/tokens/ for Mapbox or https://developer.here.com/ for HERE (free registration required)
 
 ---
 
@@ -84,7 +113,7 @@ You should see a map, centered at ReDI school. Using the `setView` function, you
 You can add markers to the map:
 
 ```js
-let marker = L.marker([51.5, -0.09]);
+let marker = L.marker([52.531446, 13.384752]);
 marker.addTo(mymap);
 ```
 
@@ -97,7 +126,7 @@ Can you add a marker to where you live?
 You can also assign popups to markers:
 
 ```js
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.")
+marker.bindPopup("<b>ReDI School</b><br>This is ReDI!")
 ```
 
 Can you add a popup with a fun message to your marker?
