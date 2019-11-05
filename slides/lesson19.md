@@ -32,7 +32,7 @@ Lesson 19, Thursday, 2019-11-05
 <div id="mapid"></div>
 ```
 
-* And we need to give it some width, e.g by setting some CSS in the `<head>` section:
+* And we need to give it some width, e.g by setting some CSS in the HTML `<head>` section:
 
 ```css
 #mapid { height: 180px; }
