@@ -1,0 +1,14 @@
+language: sh
+
+before_deploy:
+  - echo 'let projects = [' > projects.js
+  - find . -maxdepth 1 -type d -not -name '.*' | sort | xargs printf '"%s",' >> projects.js
+  - echo '];' >> projects.js
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: false
+  on:
+    branch: master
